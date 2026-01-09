@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ganesh's Blissful Ice Cream — Brand Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --gold:        #FFD700;
+      --saffron:     #FF9933;
+      --turquoise:   #40E0D0;
+      --purple:      #9370DB;
+      --forest:      #228B22;
+      --dark:        #001F3F;
+      --white:       #FFFFFF;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4e9fd 100%);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      color: var(--gold);
+      text-align: center;
+    }
+
+    .slogan {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.2rem;
+      color: var(--saffron);
+      text-align: center;
+      margin: 10px 0 40px;
+      letter-spacing: 2px;
+    }
+
+    .section {
+      margin: 60px 0;
+      padding: 40px;
+      background: rgba(255,255,255,0.85);
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .logo-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    }
+
+    .color-swatch {
+      width: 140px;
+      height: 140px;
+      border-radius: 16px;
+      margin: 15px auto;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 1.1rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    }
+
+    .colors-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+    }
+
+    .typography-example {
+      margin: 30px 0;
+      padding: 25px;
+      border-left: 5px solid var(--gold);
+      background: rgba(255,215,0,0.05);
+      border-radius: 8px;
+    }
+
+    .playfair  { font-family: 'Playfair Display', serif; }
+    .great     { font-family: 'Great Vibes', cursive;    }
+    .montserrat{ font-family: 'Montserrat', sans-serif;  }
+
+    .highlight { color: var(--purple); font-weight: 600; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Ganesh's Blissful Ice Cream</h1>
+    <div class="slogan">Пориньте у кольори божественного блаженства</div>
+
+    <!-- Логотипи -->
+    <div class="section">
+      <h2>Логотип — можливі стилі</h2>
+      <p style="text-align:center; max-width:700px; margin:0 auto 30px;">
+        Стилізований Ганеша в золотих тонах — символ мудрості, удачі та солодкого блаженства
+      </p>
+      
+      <div class="logo-grid">
+        <div class="logo-item">
+          <img src="assets/gold_ganesha.jpg" alt="Modern Ganesha gold style">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Кольорова палітра -->
+    <div class="section">
+      <h2>Кольорова палітра</h2>
+      <div class="colors-grid">
+        <div>
+          <div class="color-swatch" style="background:#FFD700;">Золото<br>#FFD700</div>
+        </div>
+        <div>
+          <div class="color-swatch" style="background:#FF9933;">Шафран<br>#FF9933</div>
+        </div>
+        <div>
+          <div class="color-swatch" style="background:#40E0D0;color:#000;">Бірюза<br>#40E0D0</div>
+        </div>
+        <div>
+          <div class="color-swatch" style="background:#9370DB;">Фіолет<br>#9370DB</div>
+        </div>
+        <div>
+          <div class="color-swatch" style="background:#228B22;">Ліс<br>#228B22</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Типографіка -->
+    <div class="section">
+      <h2>Шрифти та приклади тексту</h2>
+      
+      <div class="typography-example">
+        <p class="playfair" style="font-size:2.4rem; margin:0;">Playfair Display — заголовки, елегантність</p>
+        <p style="font-size:1.1rem; opacity:0.8;">Для назв смаків та слоганів</p>
+      </div>
+
+      <div class="typography-example">
+        <p class="great" style="font-size:3.8rem; margin:0; color:var(--saffron);">Great Vibes — грайливі акценти</p>
+        <p style="font-size:1.3rem;">Відправ свої смакові рецептори в нірвану 🌟</p>
+      </div>
+
+      <div class="typography-example">
+        <p class="montserrat" style="font-size:1.4rem; margin:0;">
+          Montserrat — чистий текст, інформація, описи інгредієнтів
+        </p>
+        <p style="opacity:0.9;">
+          100% рослинне. Органічний кокос, свіжий манго, щіпка кардамону.<br>
+          Ahimsa • Sattva • Ananda
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
