@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Брендбук Ganesha</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Ramaraja&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            font-family: 'Inter', sans-serif;
+            padding: 40px;
+        }
+        .brandbook-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #222;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+        section {
+            margin-bottom: 50px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 30px;
+        }
+        section:last-child {
+            border-bottom: none;
+        }
+        .color-palette {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .color-swatch {
+            width: 120px;
+            height: 120px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 10px;
+            font-size: 0.8rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .typography-example {
+            margin-top: 20px;
+        }
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .logo-item {
+            border: 1px dashed #ccc;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="brandbook-container">
+        <h1>Брендбук Ganesha</h1>
+
+        <section id="philosophy">
+            <h2>1. Філософія Бренду</h2>
+            <div class="mission-block" style="background: #e8f8f5; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                <h3 style="margin-top: 0; color: #00b894;">Місія</h3>
+                <p style="font-size: 1.2rem; font-style: italic;">"Живити тіло і душу божественними рослинними ласощами, що шанують планету і підносять дух."</p>
+            </div>
+
+            <div class="slogan-block" style="background: #FFF3E0; padding: 20px; border-radius: 8px; margin-bottom: 20px; text-align: center; border: 1px dashed #E76F51;">
+                <h3 style="margin-top: 0; color: #E76F51;">Слоган Бренду</h3>
+                <p style="font-size: 1.4rem; font-family: 'Ramaraja', serif; color: #d35400;">"Пориньте у кольори божественного блаженства."</p>
+            </div>
+            
+            <h3>Наші Цінності (Мантра)</h3>
+            <ul style="line-height: 1.6;">
+                <li><strong>Ahimsa (Ненасильство):</strong> 100% Веганський продукт. Ми віримо, що справжнє задоволення не повинно завдавати шкоди живим істотам.</li>
+                <li><strong>Sattva (Чистота):</strong> Тільки натуральні інгредієнти. Жодної хімії, гормонів чи штучних добавок. Чиста енергія для чистого розуму.</li>
+                <li><strong>Ananda (Блаженство):</strong> Їжа — це свято. Наші смаки яскраві, несподівані й дарують дитячу радість з кожною ложкою.</li>
+            </ul>
+
+            <h3>Tone of Voice (Тональність)</h3>
+            <p><strong>"Просвітлена Грайливість" (Enlightened Playfulness)</strong></p>
+            <p>Ми спілкуємося як мудрий, але веселий друг. Ми використовуємо духовні відсилки ("карма", "дзен", "вібрації") легко і з усмішкою, без повчань.</p>
+            <ul>
+                <li>✅ <em>"Відправ свої смакові рецептори в нірвану."</em></li>
+                <li>❌ <em>"Ми виробляємо високоякісний безлактозний продукт."</em></li>
+            </ul>
+        </section>
+
+        <section id="audience">
+            <h2>1.1 Цільова Аудиторія</h2>
+            <p><strong>Портрет: "Свідомий Гедоніст" (The Conscious Hedonist)</strong></p>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 250px;">
+                    <h4>Демографія</h4>
+                    <ul>
+                        <li>Вік: 20–40 років (Gen Z та Millennials).</li>
+                        <li>Локація: Великі міста, урбаністи.</li>
+                        <li>Дохід: Середній+, готові платити за якість та етику.</li>
+                    </ul>
+                </div>
+                <div style="flex: 1; min-width: 250px;">
+                    <h4>Психографія</h4>
+                    <ul>
+                        <li>Дбає про здоров'я, але не хоче жертвувати смаком.</li>
+                        <li>Цікавиться йогою, медитацією, саморозвитком або "slow living".</li>
+                        <li>Еко-активіст у душі (сортує сміття, обирає cruelty-free).</li>
+                        <li>Любить подорожувати й куштувати екзотичні смаки (Індія, Балі, Таїланд).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="logo">
+            <h2>2. Логотип</h2>
+            <p><strong>Іконка "Ganesha G".</strong> Тепла, привітна іконка 'G' із зображенням грайливого, юного Ганеші. Дизайн запрошує та дарує радість, ідеально втілюючи "Просвітлену Грайливість" бренду.</p>
+            <div class="logo-grid">
+                <div class="logo-item" style="border: none; box-shadow: 0 4px 10px rgba(0,0,0,0.1); background: white;">
+                    <img src="assets/logo.png" alt="Логотип Морозива Ganesha" style="max-height: 150px; max-width: 100%;">
+                </div>
+                <!-- Inverted version filter adjusted for the orange logo -->
+                <div class="logo-item" style="background: #264653; color: white; border: none;">
+                   <img src="assets/logo.png" alt="Логотип Морозива Ganesha Інверсія" style="max-height: 150px; max-width: 100%; filter: grayscale(1) brightness(100);"> 
+                </div>
+            </div>
+        </section>
+
+        <section id="colors">
+            <h2>3. Палітра Кольорів</h2>
+            <p>Наша палітра "Бенкет Чакри" балансує енергію зі спокоєм. Вона відмовляється від стандартного цифрового неону на користь багатих відтінків ринку спецій, що відчуваються органічними, але розкішними. Ці кольори обрані, щоб стимулювати апетит і водночас заземлювати дух.</p>
+            
+            <div class="color-palette">
+                <div class="color-swatch" style="background-color: #E76F51; color: white;">
+                    <span style="font-weight: bold;">Saffron Spice</span>
+                    <span>#E76F51</span>
+                    <span style="font-size: 0.7rem; margin-top: 5px;">Основний. Стимулює апетит і уособлює творчу енергію (Сакральна Чакра). Теплий, привабливий, не агресивний.</span>
+                </div>
+                <div class="color-swatch" style="background-color: #264653; color: white;">
+                    <span style="font-weight: bold;">Midnight Mantra</span>
+                    <span>#264653</span>
+                    <span style="font-size: 0.7rem; margin-top: 5px;">Текст/Основа. Глибокий вугільно-зелений. Уособлює глибоку мудрість і заземлення. М'якший за чорний, більш преміальний за сірий.</span>
+                </div>
+                <div class="color-swatch" style="background-color: #2A9D8F; color: white;">
+                    <span style="font-weight: bold;">Vedic Teal</span>
+                    <span>#2A9D8F</span>
+                    <span style="font-size: 0.7rem; margin-top: 5px;">Вторинний. Врівноважує жар шафрану. Уособлює природу, веганство і спокій, не будучи банальним "зеленим листком".</span>
+                </div>
+                <div class="color-swatch" style="background-color: #E9C46A; color: black;">
+                    <span style="font-weight: bold;">Turmeric Gold</span>
+                    <span>#E9C46A</span>
+                    <span style="font-size: 0.7rem; margin-top: 5px;">Акцент. Сяючий і багатий. Додає нотку божественності та преміальної якості (Сонячне Сплетіння).</span>
+                </div>
+                <div class="color-swatch" style="background-color: #F4A261; color: black;">
+                    <span style="font-weight: bold;">Papaya Sunset</span>
+                    <span>#F4A261</span>
+                    <span style="font-size: 0.7rem; margin-top: 5px;">Допоміжний. М'якший міст між Шафраном і Золотом. Уособлює грайливість і плодючість.</span>
+                </div>
+                <div class="color-swatch" style="background-color: #F9F7F2; color: black; border: 1px solid #ddd;">
+                    <span style="font-weight: bold;">Coconut Milk</span>
+                    <span>#F9F7F2</span>
+                    <span style="font-size: 0.7rem; margin-top: 5px;">Фон. Теплий білий. Чистий, їстівний і затишний. Уникає стерильності клінічного білого.</span>
+                </div>
+            </div>
+            
+            <div style="margin-top: 20px; padding: 15px; background: #eee; border-radius: 8px;">
+                <h4>Психологічна Гармонія</h4>
+                <p>Ця палітра використовує логіку <strong>Подвійно-Розділеної Комплементарності</strong>, але належним чином приглушена для преміального відчуття.</p>
+                <ul>
+                    <li><strong>Теплі тони (Шафран, Золото, Папайя):</strong> Викликають голод, тепло і радість (Гедонізм).</li>
+                    <li><strong>Холодні тони (Тіл, Опівнічний):</strong> Викликають довіру, спокій і позначають "натуральність/органіку" (Свідомість).</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="typography">
+            <h2>4. Типографіка</h2>
+            
+            <div style="background: #FFF8E1; padding: 15px; border-left: 4px solid #F4A261; margin-bottom: 25px;">
+                <h4 style="margin: 0 0 10px; color: #E76F51;">Концепція Типографіки: Танець Традиції та Сучасності</h4>
+                <p style="margin: 0; font-size: 0.95rem;">
+                    Ми поєднуємо <strong>Ramaraja</strong>, добре читабельний засічковий шрифт із класичною індійською модуляцією, з <strong>Outfit</strong>, чистим геометричним гротеском, що говорить про сучасну веганську чистоту. 
+                    Ця комбінація врівноважує душевну спадщину бренду (Ганеша) з чіткою, доступною комунікацією.
+                </p>
+            </div>
+            
+            <div style="margin-bottom: 30px;">
+                <h3>Заголовки: <span style="font-family: 'Ramaraja', serif; font-weight: 400;">Ramaraja</span></h3>
+                <p>Використовується для H1, H2 та логотипів. Модульований засічковий шрифт, що надає виразного відчуття індійської каліграфії, але з міцнішими, більш рівномірними штрихами для чудової читабельності.</p>
+                <div style="padding: 30px; background: #fff; border: 1px solid #eee; border-radius: 8px;">
+                    <h1 style="font-family: 'Ramaraja', serif; margin: 0; color: #E76F51; font-size: 3rem;">Ganesha's Bliss</h1>
+                    <h2 style="font-family: 'Ramaraja', serif; margin: 10px 0 0; color: #2A9D8F; font-size: 2.5rem;">Divine Flavors</h2>
+                    <h3 style="font-family: 'Ramaraja', serif; margin: 10px 0 0; color: #264653; font-size: 1.8rem;">The Sweetest Mantra</h3>
+                </div>
+            </div>
+
+            <div>
+                <h3>Основний текст: <span style="font-family: 'Outfit', sans-serif;">Outfit</span></h3>
+                <p>Геометричний гротеск, сучасний, чистий і дуже розбірливий. Він врівноважує орнаментальні заголовки своєю простотою.</p>
+                <div style="padding: 30px; background: #fff; border: 1px solid #eee; border-radius: 8px; font-family: 'Outfit', sans-serif;">
+                    <p style="font-weight: 700; font-size: 1.2rem; color: #E76F51;">Outfit Bold (700) — Використовується для Кнопок та Акцентів</p>
+                    <p style="font-weight: 400; font-size: 1rem; color: #333;">Outfit Regular (400) — Стандартна вага для всього основного тексту, що передає інформацію чітко і без відволікань. Ідеально для списків інгредієнтів та історій.</p>
+                    <p style="font-weight: 300; font-size: 0.9rem; color: #666;">Outfit Light (300) — використовується для тонких підписів, дисклеймерів або елегантного підтексту.</p>
+                    
+                    <div style="margin-top: 20px; font-size: 2rem; letter-spacing: 2px;">
+                        Аа Бб Вв Гг Ґґ Дд Ее Єє 123
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ui-elements">
+            <h2>5. UI Елементи</h2>
+            <p>Приклади кнопок і форм.</p>
+            <button class="wp-block-button__link" style="background-color: #FF6B6B; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Приклад Кнопки</button>
+        </section>
+        
+        <section id="images">
+            <h2>6. Фотостиль</h2>
+            <p>Рекомендації щодо зображень: яскраві, соковиті, з високим контрастом.</p>
+        </section>
+
+    </div>
+
+</body>
+</html>

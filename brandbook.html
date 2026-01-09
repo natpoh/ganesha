@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesha Brandbook</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Ramaraja&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            font-family: 'Inter', sans-serif;
+            padding: 40px;
+        }
+        .brandbook-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #222;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+        section {
+            margin-bottom: 50px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 30px;
+        }
+        section:last-child {
+            border-bottom: none;
+        }
+        .color-palette {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .color-swatch {
+            width: 120px;
+            height: 120px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 10px;
+            font-size: 0.8rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .typography-example {
+            margin-top: 20px;
+        }
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .logo-item {
+            border: 1px dashed #ccc;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="brandbook-container">
+        <h1>Ganesha Brandbook</h1>
+
+        <section id="philosophy">
+            <h2>1. Brand Philosophy</h2>
+            <div class="mission-block" style="background: #e8f8f5; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                <h3 style="margin-top: 0; color: #00b894;">Mission</h3>
+                <p style="font-size: 1.2rem; font-style: italic;">"To nourish body and soul with divine plant-based treats that honor the planet and uplift the spirit."</p>
+            </div>
+
+            <div class="slogan-block" style="background: #FFF3E0; padding: 20px; border-radius: 8px; margin-bottom: 20px; text-align: center; border: 1px dashed #E76F51;">
+                <h3 style="margin-top: 0; color: #E76F51;">Brand Slogan</h3>
+                <p style="font-size: 1.4rem; font-family: 'Ramaraja', serif; color: #d35400;">"Immerse yourself in the colors of divine bliss."</p>
+            </div>
+            
+            <h3>Our Values (The Mantra)</h3>
+            <ul style="line-height: 1.6;">
+                <li><strong>Ahimsa (Non-violence):</strong> 100% Vegan. We believe true pleasure should not cause harm to living beings.</li>
+                <li><strong>Sattva (Purity):</strong> Only natural ingredients. No chemicals, hormones, or artificial additives. Pure energy for a pure mind.</li>
+                <li><strong>Ananda (Bliss):</strong> Food is a celebration. Our flavors are vibrant, unexpected, and bring childlike joy with every scoop.</li>
+            </ul>
+
+            <h3>Tone of Voice</h3>
+            <p><strong>"Enlightened Playfulness"</strong></p>
+            <p>We communicate like a wise but fun friend. We use spiritual references ("karma", "zen", "vibes") lightly and with a smile, never preachy.</p>
+            <ul>
+                <li>✅ <em>"Send your taste buds an invite to nirvana."</em></li>
+                <li>❌ <em>"We manufacture a high-quality lactose-free product."</em></li>
+            </ul>
+        </section>
+
+        <section id="audience">
+            <h2>1.1 Target Audience</h2>
+            <p><strong>Profile: "The Conscious Hedonist"</strong></p>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 250px;">
+                    <h4>Demographics</h4>
+                    <ul>
+                        <li>Age: 20–40 (Gen Z & Millennials).</li>
+                        <li>Location: Major cities, urbanites.</li>
+                        <li>Income: Middle+, willing to pay for quality and ethics.</li>
+                    </ul>
+                </div>
+                <div style="flex: 1; min-width: 250px;">
+                    <h4>Psychographics</h4>
+                    <ul>
+                        <li>Cares about health but won't sacrifice taste.</li>
+                        <li>Interested in yoga, meditation, self-growth, or "slow living".</li>
+                        <li>Eco-activist at heart (recycles, chooses cruelty-free).</li>
+                        <li>Loves travel and exotic flavors (India, Bali, Thailand).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="logo">
+            <h2>2. Logo</h2>
+            <p><strong>The "Ganesha G" Icon.</strong> A warm, approachable 'G' icon featuring a playful, young Ganesha. The design is inviting and joyous, perfectly capturing the "Enlightened Playfulness" of the brand.</p>
+            <div class="logo-grid">
+                <div class="logo-item" style="border: none; box-shadow: 0 4px 10px rgba(0,0,0,0.1); background: white;">
+                    <img src="assets/logo.png" alt="Ganesha Ice Cream Logo" style="max-height: 150px; max-width: 100%;">
+                </div>
+                <!-- Inverted version filter adjusted for the orange logo -->
+                <div class="logo-item" style="background: #264653; color: white; border: none;">
+                   <img src="assets/logo.png" alt="Ganesha Ice Cream Logo Inverted" style="max-height: 150px; max-width: 100%; filter: grayscale(1) brightness(100);"> 
+                </div>
+            </div>
+        </section>
+
+        <section id="colors">
+            <h2>3. Color Palette</h2>
+            <p>Our "Chakra Feast" palette balances energy with serenity. It ignores standard digital neon in favor of rich, spice-market hues that feel organic yet luxurious. These colors are chosen to stimulate appetite while grounding the spirit.</p>
+            
+            <div class="color-palette">
+                <div class="color-swatch" style="background-color: #E76F51; color: white;">
+                    <span style="font-weight: bold;">Saffron Spice</span>
+                    <span>#E76F51</span>
+                    <span style="font-size: 0.7rem; margin-top: 5px;">Primary. Stimulates appetite and represents creative energy (Sacral Chakra). Warm, inviting, not aggressive.</span>
+                </div>
+                <div class="color-swatch" style="background-color: #264653; color: white;">
+                    <span style="font-weight: bold;">Midnight Mantra</span>
+                    <span>#264653</span>
+                    <span style="font-size: 0.7rem; margin-top: 5px;">Text/Base. Deep charcoal-green. Represents deep wisdom and grounding. Softer than black, more premium than grey.</span>
+                </div>
+                <div class="color-swatch" style="background-color: #2A9D8F; color: white;">
+                    <span style="font-weight: bold;">Vedic Teal</span>
+                    <span>#2A9D8F</span>
+                    <span style="font-size: 0.7rem; margin-top: 5px;">Secondary. Balances the heat of saffron. Represents nature, veganism, and tranquility without being cliché "leaf green".</span>
+                </div>
+                <div class="color-swatch" style="background-color: #E9C46A; color: black;">
+                    <span style="font-weight: bold;">Turmeric Gold</span>
+                    <span>#E9C46A</span>
+                    <span style="font-size: 0.7rem; margin-top: 5px;">Accent. Illuminating and rich. Adds a touch of divinity and premium quality (Solar Plexus).</span>
+                </div>
+                <div class="color-swatch" style="background-color: #F4A261; color: black;">
+                    <span style="font-weight: bold;">Papaya Sunset</span>
+                    <span>#F4A261</span>
+                    <span style="font-size: 0.7rem; margin-top: 5px;">Supporting. A softer bridge between Saffron and Gold. Represents playfulness and fruitfulness.</span>
+                </div>
+                <div class="color-swatch" style="background-color: #F9F7F2; color: black; border: 1px solid #ddd;">
+                    <span style="font-weight: bold;">Coconut Milk</span>
+                    <span>#F9F7F2</span>
+                    <span style="font-size: 0.7rem; margin-top: 5px;">Background. Warm off-white. Pure, edible, and comforting. Avoids the sterility of clinical white.</span>
+                </div>
+            </div>
+            
+            <div style="margin-top: 20px; padding: 15px; background: #eee; border-radius: 8px;">
+                <h4>Psychological Harmony</h4>
+                <p>This palette uses a <strong>Double-Split Complementary</strong> scheme logic but properly muted for a premium feel.</p>
+                <ul>
+                    <li><strong>Warm Tones (Saffron, Gold, Papaya):</strong> Trigger hunger, warmth, and joy (Hedonism).</li>
+                    <li><strong>Cool Tones (Teal, Midnight):</strong> Provoke trust, calm, and signify "natural/organic" (Consciousness).</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="typography">
+            <h2>4. Typography</h2>
+            
+            <div style="background: #FFF8E1; padding: 15px; border-left: 4px solid #F4A261; margin-bottom: 25px;">
+                <h4 style="margin: 0 0 10px; color: #E76F51;">Typography Concept: The Dance of Tradition & Modernity</h4>
+                <p style="margin: 0; font-size: 0.95rem;">
+                    We pair <strong>Ramaraja</strong>, a highly readable serif with classic Indian modulation, with <strong>Outfit</strong>, a clean geometric sans-serif that speaks to modern vegan purity. 
+                    This combination balances the brand's soulful heritage (Ganesha) with clear, accessible communication.
+                </p>
+            </div>
+            
+            <div style="margin-bottom: 30px;">
+                <h3>Headings: <span style="font-family: 'Ramaraja', serif; font-weight: 400;">Ramaraja</span></h3>
+                <p>Used for H1, H2, and logos. A modulated serif that provides the distinct feel of Indian calligraphy but with stronger, more uniform strokes for excellent readability.</p>
+                <div style="padding: 30px; background: #fff; border: 1px solid #eee; border-radius: 8px;">
+                    <h1 style="font-family: 'Ramaraja', serif; margin: 0; color: #E76F51; font-size: 3rem;">Ganesha's Bliss</h1>
+                    <h2 style="font-family: 'Ramaraja', serif; margin: 10px 0 0; color: #2A9D8F; font-size: 2.5rem;">Divine Flavors</h2>
+                    <h3 style="font-family: 'Ramaraja', serif; margin: 10px 0 0; color: #264653; font-size: 1.8rem;">The Sweetest Mantra</h3>
+                </div>
+            </div>
+
+            <div>
+                <h3>Body Text: <span style="font-family: 'Outfit', sans-serif;">Outfit</span></h3>
+                <p>Geometric sans-serif, modern, clean, and highly legible. It balances the ornate headings with simplicity.</p>
+                <div style="padding: 30px; background: #fff; border: 1px solid #eee; border-radius: 8px; font-family: 'Outfit', sans-serif;">
+                    <p style="font-weight: 700; font-size: 1.2rem; color: #E76F51;">Outfit Bold (700) — Used for Buttons & Accents</p>
+                    <p style="font-weight: 400; font-size: 1rem; color: #333;">Outfit Regular (400) — The standard weight for all body text, conveying information clearly without distraction. Perfect for ingredient lists and storytelling.</p>
+                    <p style="font-weight: 300; font-size: 0.9rem; color: #666;">Outfit Light (300) — utilized for subtle captions, disclaimers, or elegant sub-text.</p>
+                    
+                    <div style="margin-top: 20px; font-size: 2rem; letter-spacing: 2px;">
+                        Aa Bb Cc Dd Ee Ff 123
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ui-elements">
+            <h2>5. UI Elements</h2>
+            <p>Examples of buttons and forms.</p>
+            <button class="wp-block-button__link" style="background-color: #FF6B6B; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Button Example</button>
+        </section>
+        
+        <section id="images">
+            <h2>6. Photography Style</h2>
+            <p>Image recommendations: bright, juicy, high contrast.</p>
+        </section>
+
+    </div>
+
+</body>
+</html>
