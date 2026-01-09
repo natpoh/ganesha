@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh's Blissful Ice Cream Factory</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Rozha+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="spiral-bg"></canvas>
+
+    <!-- Navigation -->
+    <header class="main-header">
+        <div class="logo">Ganesh's Bliss</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#benefits">Why Vegan?</a></li>
+                <li><a href="#catalog">Flavors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section (Original Shop Window) -->
+    <section id="hero" class="shop-window">
+        <!-- Background Layer removed for spiral visibility -->
+        <!-- <div class="layer background" style="background-image: url('assets/rainbow_bg.png');"></div> -->
+
+        <!-- Magic Particles Container -->
+        <canvas id="magic-canvas"></canvas>
+
+        <!-- Mechanical Layer: Gears (Removed) -->
+        <!-- <div class="layer mechanics"></div> -->
+
+        <!-- Production Layer removed -->
+        <!-- <div class="layer production"></div> -->
+
+        <!-- Central Character -->
+        <div class="layer character-layer">
+            <div class="halo-effect"></div>
+            <img src="assets/ganesh.png" alt="Ganesh Eating Ice Cream" class="ganesh-char">
+        </div>
+
+        <!-- Foreground Layer -->
+        <div class="layer foreground">
+            <div class="glass-reflection"></div>
+            <!-- <div class="vignette"></div> -->
+        </div>
+        
+        <div class="ui-overlay">
+            <h1>Ganesh's Blissful Ice Cream</h1>
+            <p>Baba Nam Kevalam</p>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll for Bliss</span>
+            <div class="arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="content-section bg-nature">
+        <h2 class="section-title">Why Vegan Ice Cream?</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="icon">🌿</div>
+                <h3>Planetary Love</h3>
+                <p>Vegan ice cream leaves a lighter footprint. Producing plant-based milk uses significantly less land and water than dairy, reducing greenhouse gas emissions by up to 80%.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="icon">❤️</div>
+                <h3>Heart Healthy</h3>
+                <p>Free from cholesterol and lower in saturated fats. Our plant-based treats are kind to your heart while satisfying your soul's deepest cravings.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="icon">✨</div>
+                <h3>Pure Vitality</h3>
+                <p>Packed with nutrient-rich ingredients. We avoid artificial hormones and antibiotics, giving you pure, high-vibrational energy in every scoop.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section id="catalog" class="content-section alt-bg bg-flavors">
+        <h2 class="section-title">Divine Flavors</h2>
+        <div class="catalog-grid">
+            <div class="flavor-card">
+                <img src="assets/ice_cream_mango.png" alt="Mango Lassi Bliss" class="flavor-image">
+                <h3>Mango Lassi Bliss</h3>
+                <p>Alphonso mango swirled with coconut yogurt and a hint of cardamom.</p>
+            </div>
+            <div class="flavor-card">
+                <img src="assets/ice_cream_rose.png" alt="Rose & Pistachio" class="flavor-image">
+                <h3>Rose & Pistachio</h3>
+                <p>Fragrant rose water essence with crunchy roasted pistachios.</p>
+            </div>
+            <div class="flavor-card">
+                <img src="assets/ice_cream_chai.png" alt="Spiced Chai Choco" class="flavor-image">
+                <h3>Spiced Chai Choco</h3>
+                <p>Dark chocolate infused with ginger, cloves, and cinnamon.</p>
+            </div>
+             <div class="flavor-card">
+                <img src="assets/ice_cream_berry.png" alt="Sacred Berry" class="flavor-image">
+                <h3>Sacred Berry</h3>
+                <p>A meditative blend of raspberries, goji berries, and holy basil.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Production Section -->
+    <section id="production" class="content-section bg-production">
+        <div class="production-card">
+            <h2>Made with Love</h2>
+            <p>
+                At Ganesh's Blissful Ice Cream Factory, every scoop is a labor of love. 
+                Our magical factory combines traditional Indian craftsmanship with modern vegan innovation. 
+                We believe that happiness is the most important ingredient, which is why our process 
+                is filled with joy, music, and positive energy from start to finish.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="site-footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>📍 108 Lotus Path, Bliss City</p>
+                <p>📞 +1 (800) OM-SHANTI</p>
+                <p>📧 namaste@ganeshicecream.com</p>
+            </div>
+            <div class="contact-form-wrapper">
+                <h3>Send us a Message</h3>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit">Send Awareness</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Ganesh's Blissful Ice Cream Factory. Baba Nam Kevalam.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
