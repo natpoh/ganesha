@@ -5,7 +5,7 @@
     --cashew:      #FAF3E0; /* Rich Cream */
     --halva:       #DCC6A0; /* Sesame Beige */
     --pistachio:   #9DC08B; /* Soft Green */
-    --rose:        #F4C2C2; /* Soft Pink */
+    --coconut:     #FFF5EE; /* Coconut Milk (Seashell) */
     
     /* Berry Collection */
     --raspberry:   #D81B60; /* Vibrant Pink-Red */
@@ -62,7 +62,7 @@ h3 {
 /* --- HERO SECTION (MANGO) --- */
 .hero {
     min-height: 90vh;
-    background-color: var(--mango); /* Mango! */
+    background-color: var(--mango); /* Switched to Halva per user request */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -123,7 +123,7 @@ h3 {
 /* --- MARQUEE (Blackberry) --- */
 .marquee-container {
     background: var(--blackberry); /* Berry Update */
-    color: var(--mango);
+    color: #fff;
     padding: 15px 0;
     overflow: hidden;
     white-space: nowrap;
@@ -204,7 +204,7 @@ h3 {
 /* Edible Icon Colors */
 .benefit-item:nth-child(1) .benefit-icon { color: var(--mango); }
 .benefit-item:nth-child(2) .benefit-icon { color: var(--pistachio); }
-.benefit-item:nth-child(3) .benefit-icon { color: var(--rose); }
+.benefit-item:nth-child(3) .benefit-icon { color: var(--raspberry); } /* Rose removed, using Raspberry for icon visibility */
 
 /* --- FLAVORS (Nature Palette) --- */
 .flavor-section {
@@ -255,7 +255,7 @@ h3 {
 .flavor-row:nth-child(1) .flavor-image-col { order: 1; }
 
 .flavor-row:nth-child(2) .flavor-text-col { 
-    background-color: var(--rose); 
+    background-color: var(--coconut); /* Rose replaced with Coconut Milk */
     order: 1; 
 }
 .flavor-row:nth-child(2) .flavor-image-col { order: 2; }
