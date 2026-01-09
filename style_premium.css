@@ -1,314 +1,349 @@
-/* Premium Style System for Ganesha's Bliss */
+/* Pop-Premium Style System (Edible Luxury Palette) */
 :root {
-    --gold:        #FFD700;
-    --saffron:     #FF9933;
-    --turquoise:   #40E0D0;
-    --purple:      #9370DB;
-    --forest:      #228B22;
-    --dark:        #001F3F;
+    /* Edible Palette */
+    --mango:       #FFC045; /* Warm Golden Yellow */
+    --cashew:      #FAF3E0; /* Rich Cream */
+    --halva:       #DCC6A0; /* Sesame Beige */
+    --pistachio:   #9DC08B; /* Soft Green */
+    --rose:        #F4C2C2; /* Soft Pink */
+    
+    --chocolate:   #3E2723; /* Deep Brown Text */
+    --dark-choco:  #281E1E; /* Darker accent */
+    
     --white:       #FFFFFF;
-    --glass-bg:    rgba(255, 255, 255, 0.85);
-    --glass-border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    /* Rich "Cream Paper" Background */
-    background-color: #fdfbf7;
-    background-image: 
-        /* Golden top spotlight */
-        radial-gradient(circle at 50% 0%, rgba(255, 215, 0, 0.12) 0%, transparent 60%),
-        /* Warm underglow */
-        linear-gradient(135deg, #fdfbf7 0%, #f3eee3 100%),
-        /* Texture */
-        url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+');
-    color: var(--dark);
-    line-height: 1.6;
+    background-color: var(--cashew); /* Creamy Background */
+    color: var(--chocolate); /* Brown Text */
+    line-height: 1.5;
     overflow-x: hidden;
 }
 
-/* Typography */
+/* Typography Overhaul */
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
-    color: var(--dark); /* Changed from Gold to Dark for readability */
-    text-shadow: none; /* Removed shadow for cleaner look */
-    letter-spacing: -0.5px;
+    font-weight: 700;
+    color: var(--dark-choco);
+    margin: 0;
+    line-height: 1.2;
 }
 
-.slogan {
-    font-family: 'Great Vibes', cursive;
-    font-size: 4rem; /* Larger */
-    color: #C75B12; /* Darker Saffron for better contrast */
-    text-align: center;
-    margin: 20px 0 50px;
-    letter-spacing: 2px;
-    text-shadow: 0 2px 4px rgba(199, 91, 18, 0.2);
+h2 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
 }
 
-/* Decorative Divider */
-.ornament-divider {
-    text-align: center;
-    margin: 60px 0;
-    position: relative;
-    color: var(--gold);
+h3 {
     font-size: 2rem;
-    opacity: 0.8;
 }
 
-.ornament-divider::before, .ornament-divider::after {
-    content: "";
-    display: inline-block;
-    width: 100px;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--gold), transparent);
-    vertical-align: middle;
-    margin: 0 15px;
-}
-
-/* Layout Containers */
+/* Layout Utils */
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 0 40px;
 }
 
-/* Premium Header */
-.premium-header {
+.full-section {
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* --- HERO SECTION (MANGO) --- */
+.hero {
+    min-height: 90vh;
+    background-color: var(--mango); /* Mango! */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 40px 0;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    position: relative;
+    color: var(--chocolate);
+}
+
+.hero-content {
+    z-index: 2;
+    max-width: 800px;
 }
 
 .logo-text {
     font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: var(--gold);
-    background: -webkit-linear-gradient(45deg, #B8860B, #C75B12);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    display: inline-block;
+    border-bottom: 3px solid var(--chocolate);
+    padding-bottom: 5px;
+    color: var(--chocolate);
 }
 
-/* Hero Section */
-.hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 80px;
+.hero h1 {
+    font-size: 5rem;
+    font-family: 'Great Vibes', cursive;
+    color: var(--dark-choco);
+    margin-bottom: 30px;
+    transform: rotate(-5deg);
 }
 
 .hero-image-wrapper {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    margin: 0 auto 30px;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto 40px;
     border-radius: 50%;
-    padding: 10px;
-    background: linear-gradient(45deg, var(--gold), transparent);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border: 8px solid var(--cashew);
+    box-shadow: 10px 10px 0px rgba(62, 39, 35, 0.1); /* Chocolate shadow */
+    animation: float 6s ease-in-out infinite;
 }
 
 .hero-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid var(--white);
 }
 
-/* Concept Section */
-.concept-box {
+@keyframes float {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(2deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+/* --- MARQUEE (Chocolate) --- */
+.marquee-container {
+    background: var(--chocolate);
+    color: var(--mango);
+    padding: 15px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    z-index: 5;
+    transform: rotate(-1deg) scale(1.02);
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee-item {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin: 0 40px;
+    letter-spacing: 2px;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* --- CONCEPT SECTION (HALVA) --- */
+.concept-section {
+    background-color: var(--halva); /* Earthy Beige */
+    color: var(--dark-choco);
     text-align: center;
-    padding: 60px;
-    background: var(--glass-bg);
-    border: var(--glass-border);
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    margin-bottom: 80px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+}
+
+.concept-section h2 {
+    color: var(--dark-choco);
 }
 
 .concept-text {
-    font-size: 1.4rem;
-    max-width: 700px;
-    margin: 0 auto;
-    color: var(--purple);
+    font-size: 1.8rem;
     font-weight: 500;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-/* Flavors Grid */
-.flavor-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
+/* --- BENEFITS (Cashew) --- */
+.benefits-section {
+    background-color: var(--cashew);
 }
-
-.flavor-card {
-    background: var(--white);
-    padding: 30px;
-    border-radius: 16px;
-    text-align: center;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    border: 1px solid rgba(0,0,0,0.03);
-}
-
-.flavor-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-}
-
-.flavor-img {
-    height: 180px;
-    width: auto;
-    margin-bottom: 20px;
-    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
-}
-
-.flavor-title {
-    font-size: 1.5rem;
-    color: var(--turquoise);
-    margin-bottom: 10px;
-}
-
-.flavor-desc {
-    color: #666;
-    font-size: 0.95rem;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 50px 0;
-    color: #888;
-    font-size: 0.9rem;
-    margin-top: 50px;
-    border-top: 1px solid rgba(0,0,0,0.05);
-}
-.premium-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-}
-
-.premium-form input, 
-.premium-form textarea {
-    width: 100%;
-    max-width: 400px;
-    padding: 15px;
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid var(--gold);
-    color: var(--dark);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    transition: border-bottom 0.3s;
-}
-
-.premium-form input::placeholder, 
-.premium-form textarea::placeholder {
-    color: #999;
-    font-style: italic;
-}
-
-.premium-form input:focus, 
-.premium-form textarea:focus {
-    outline: none;
-    border-bottom: 2px solid var(--saffron);
-}
-
-.premium-form button {
-    margin-top: 30px;
-    padding: 15px 60px;
-    background: linear-gradient(135deg, var(--gold) 0%, var(--saffron) 100%);
-    color: #fff;
-    border: 1px solid rgba(255,255,255,0.5);
-    border-radius: 50px;
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    cursor: pointer;
-    box-shadow: 0 10px 30px rgba(255, 153, 51, 0.4);
-    transition: all 0.4s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.premium-form button:hover {
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(255, 153, 51, 0.6);
-    background: linear-gradient(135deg, var(--saffron) 0%, var(--gold) 100%);
-    letter-spacing: 4px; /* Subtle expansion effect */
-}
-
 
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    max-width: 1000px;
-    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin-top: 60px;
 }
 
 .benefit-item {
-    padding: 30px;
-    /* Premium Ivory Gradient */
-    background: linear-gradient(135deg, #fffcf5 0%, #f7f2e8 100%);
-    /* Refined Gold Border */
-    border: 1px solid rgba(184, 134, 11, 0.3);
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(199, 91, 18, 0.05); /* Soft copper shadow */
-    transition: all 0.4s ease;
+    text-align: center;
+    padding: 40px;
+    background: var(--white);
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(62,39,35,0.05);
+}
+
+.benefit-item:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(62,39,35,0.08);
+}
+
+.benefit-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/* Edible Icon Colors */
+.benefit-item:nth-child(1) .benefit-icon { color: var(--mango); }
+.benefit-item:nth-child(2) .benefit-icon { color: var(--pistachio); }
+.benefit-item:nth-child(3) .benefit-icon { color: var(--rose); }
+
+/* --- FLAVORS (Nature Palette) --- */
+.flavor-section {
+    padding: 0;
+}
+
+.flavor-row {
+    display: flex;
+    align-items: stretch;
+    min-height: 500px;
+}
+
+.flavor-image-col {
+    flex: 1;
     position: relative;
     overflow: hidden;
 }
 
-.benefit-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+.flavor-image-col img {
     width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, var(--gold), var(--saffron), var(--gold));
-    opacity: 0.8;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
 }
 
-.benefit-item:hover {
-    transform: translateY(-8px);
-    background: linear-gradient(135deg, #fff 0%, #fffcf5 100%);
-    box-shadow: 0 15px 35px rgba(199, 91, 18, 0.15);
-    border-color: rgba(184, 134, 11, 0.6);
+.flavor-row:hover .flavor-image-col img {
+    transform: scale(1.1);
 }
 
-.benefit-icon {
+.flavor-text-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+    color: var(--dark-choco);
+}
+
+.flavor-text-col h3, .flavor-text-col p {
+    color: var(--dark-choco);
+}
+
+/* Order and Color Assignment */
+.flavor-row:nth-child(1) .flavor-text-col { 
+    background-color: var(--pistachio); /* Soft Green for Mango context or switch? Let's use Pistachio for variety */
+    order: 2; 
+}
+.flavor-row:nth-child(1) .flavor-image-col { order: 1; }
+
+.flavor-row:nth-child(2) .flavor-text-col { 
+    background-color: var(--rose); 
+    order: 1; 
+}
+.flavor-row:nth-child(2) .flavor-image-col { order: 2; }
+
+.flavor-row:nth-child(3) .flavor-text-col { 
+    background-color: var(--halva); 
+    order: 2; 
+}
+.flavor-row:nth-child(3) .flavor-image-col { order: 1; }
+
+
+.flavor-title {
     font-size: 3rem;
-    color: #C75B12;
     margin-bottom: 20px;
-    text-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.benefit-item h3 {
-    margin-bottom: 15px;
-    font-size: 1.5rem;
-    color: var(--dark);
+.flavor-desc {
+    font-size: 1.2rem;
+    color: rgba(40,30,30,0.8);
 }
 
-.benefit-item p {
-    font-size: 0.95rem;
-    color: #555;
-    line-height: 1.6;
+/* --- CONTACT (PISTACHIO) --- */
+.contact-section {
+    background-color: var(--pistachio);
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: var(--dark-choco);
+}
+
+.premium-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.premium-form input,
+.premium-form textarea {
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--chocolate);
+    background: rgba(255,255,255,0.9);
+}
+
+.premium-form textarea {
+    border-radius: 30px;
+}
+
+.premium-form button {
+    padding: 20px 50px;
+    border-radius: 50px;
+    background-color: var(--chocolate); /* Dark Chocolate Button */
+    color: var(--cashew);
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 0.2s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.premium-form button:hover {
+    transform: scale(1.05);
+    background-color: var(--dark-choco);
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--chocolate);
+    color: var(--cashew);
+    text-align: center;
+    padding: 80px 0;
+}
+
+footer a {
+    color: var(--mango);
+    text-decoration: none;
+    font-weight: 700;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-    .slogan { font-size: 2.5rem; }
-    .hero-image-wrapper { width: 220px; height: 220px; }
+@media (max-width: 900px) {
+    .h1 { font-size: 3rem; }
+    .benefits-grid { grid-template-columns: 1fr; }
+    .flavor-row { flex-direction: column; }
+    .flavor-row:nth-child(odd) .flavor-text-col { order: 2; }
+    .flavor-row:nth-child(even) .flavor-text-col { order: 2; }
+    .flavor-image-col { height: 300px; }
 }

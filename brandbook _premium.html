@@ -10,12 +10,12 @@
   
   <style>
     :root {
-      --gold:        #FFD700;
-      --saffron:     #FF9933;
-      --turquoise:   #40E0D0;
-      --purple:      #9370DB;
-      --forest:      #228B22;
-      --dark:        #001F3F;
+      --mango:       #FFC045;
+      --cashew:      #FAF3E0;
+      --halva:       #DCC6A0;
+      --pistachio:   #9DC08B;
+      --rose:        #F4C2C2;
+      --chocolate:   #3E2723;
       --white:       #FFFFFF;
     }
 
@@ -23,8 +23,8 @@
       margin: 0;
       padding: 0;
       font-family: 'Montserrat', sans-serif;
-      background: linear-gradient(135deg, #f5f7fa 0%, #e4e9fd 100%);
-      color: var(--dark);
+      background-color: var(--cashew);
+      color: var(--chocolate);
       line-height: 1.6;
     }
 
@@ -36,14 +36,15 @@
 
     h1, h2 {
       font-family: 'Playfair Display', serif;
-      color: var(--gold);
+      color: var(--chocolate);
       text-align: center;
     }
 
     .slogan {
       font-family: 'Great Vibes', cursive;
       font-size: 3.2rem;
-      color: var(--saffron);
+      color: var(--mango);
+      text-shadow: 1px 1px 0px #3E2723;
       text-align: center;
       margin: 10px 0 40px;
       letter-spacing: 2px;
@@ -52,9 +53,9 @@
     .section {
       margin: 60px 0;
       padding: 40px;
-      background: rgba(255,255,255,0.85);
+      background: var(--white);
       border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      box-shadow: 0 10px 30px rgba(62,39,35,0.08); /* Chocolate shadow */
     }
 
     .logo-grid {
@@ -69,7 +70,7 @@
       max-width: 100%;
       height: auto;
       border-radius: 12px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+      box-shadow: 0 8px 25px rgba(62,39,35,0.12);
     }
 
     .color-swatch {
@@ -77,14 +78,15 @@
       height: 140px;
       border-radius: 16px;
       margin: 15px auto;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      box-shadow: 0 6px 15px rgba(62,39,35,0.15);
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
+      color: var(--chocolate);
       font-weight: bold;
       font-size: 1.1rem;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+      text-align: center;
+      border: 1px solid rgba(0,0,0,0.05);
     }
 
     .colors-grid {
@@ -97,8 +99,8 @@
     .typography-example {
       margin: 30px 0;
       padding: 25px;
-      border-left: 5px solid var(--gold);
-      background: rgba(255,215,0,0.05);
+      border-left: 5px solid var(--mango);
+      background: rgba(255, 192, 69, 0.1);
       border-radius: 8px;
     }
 
@@ -106,7 +108,7 @@
     .great     { font-family: 'Great Vibes', cursive;    }
     .montserrat{ font-family: 'Montserrat', sans-serif;  }
 
-    .highlight { color: var(--purple); font-weight: 600; }
+    .highlight { color: var(--pistachio); font-weight: 600; }
   </style>
 </head>
 <body>
@@ -120,7 +122,7 @@
     <div class="section">
       <h2>Логотип — можливі стилі</h2>
       <p style="text-align:center; max-width:700px; margin:0 auto 30px;">
-        Стилізований Ганеша в золотих тонах — символ мудрості, удачі та солодкого блаженства
+        Стилізований Ганеша в мангових тонах — символ мудрості, удачі та солодкого блаженства
       </p>
       
       <div class="logo-grid">
@@ -133,22 +135,25 @@
 
     <!-- Кольорова палітра -->
     <div class="section">
-      <h2>Кольорова палітра</h2>
+      <h2>Натуральна Палітра ("Edible Luxury")</h2>
       <div class="colors-grid">
         <div>
-          <div class="color-swatch" style="background:#FFD700;">Золото<br>#FFD700</div>
+          <div class="color-swatch" style="background:#FFC045;">Mango<br>#FFC045</div>
         </div>
         <div>
-          <div class="color-swatch" style="background:#FF9933;">Шафран<br>#FF9933</div>
+          <div class="color-swatch" style="background:#FAF3E0;">Cashew<br>#FAF3E0</div>
         </div>
         <div>
-          <div class="color-swatch" style="background:#40E0D0;color:#000;">Бірюза<br>#40E0D0</div>
+          <div class="color-swatch" style="background:#DCC6A0;">Halva<br>#DCC6A0</div>
         </div>
         <div>
-          <div class="color-swatch" style="background:#9370DB;">Фіолет<br>#9370DB</div>
+          <div class="color-swatch" style="background:#3E2723; color:#FAF3E0;">Chocolate<br>#3E2723</div>
         </div>
         <div>
-          <div class="color-swatch" style="background:#228B22;">Ліс<br>#228B22</div>
+          <div class="color-swatch" style="background:#9DC08B;">Pistachio<br>#9DC08B</div>
+        </div>
+        <div>
+          <div class="color-swatch" style="background:#F4C2C2;">Rose<br>#F4C2C2</div>
         </div>
       </div>
     </div>
