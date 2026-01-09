@@ -247,6 +247,66 @@ footer {
     background: linear-gradient(135deg, var(--saffron) 0%, var(--gold) 100%);
     letter-spacing: 4px; /* Subtle expansion effect */
 }
+
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.benefit-item {
+    padding: 30px;
+    /* Premium Ivory Gradient */
+    background: linear-gradient(135deg, #fffcf5 0%, #f7f2e8 100%);
+    /* Refined Gold Border */
+    border: 1px solid rgba(184, 134, 11, 0.3);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(199, 91, 18, 0.05); /* Soft copper shadow */
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.benefit-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--gold), var(--saffron), var(--gold));
+    opacity: 0.8;
+}
+
+.benefit-item:hover {
+    transform: translateY(-8px);
+    background: linear-gradient(135deg, #fff 0%, #fffcf5 100%);
+    box-shadow: 0 15px 35px rgba(199, 91, 18, 0.15);
+    border-color: rgba(184, 134, 11, 0.6);
+}
+
+.benefit-icon {
+    font-size: 3rem;
+    color: #C75B12;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.benefit-item h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: var(--dark);
+}
+
+.benefit-item p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .slogan { font-size: 2.5rem; }
