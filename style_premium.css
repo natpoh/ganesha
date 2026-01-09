@@ -9,7 +9,7 @@
     
     /* Berry Collection */
     --raspberry:   #D81B60; /* Vibrant Pink-Red */
-    --blackberry:  #4A148C; /* Deep Royal Purple */
+    --blackberry:  #614387; /* Deep Royal Purple */
     --blueberry:   #5C6BC0; /* Soft Violet-Blue */
     
     --chocolate:   #3E2723; /* Deep Brown Text */
@@ -123,8 +123,8 @@ h3 {
 
 /* --- MARQUEE (Blackberry) --- */
 .marquee-container {
-    background-color: var(--blueberry);
-    color: #fff;
+    background-color: var(--blackberry);
+    color: var(--cashew);
     padding: 15px 0;
     overflow: hidden;
     white-space: nowrap;
