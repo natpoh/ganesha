@@ -7,6 +7,11 @@
     --pistachio:   #9DC08B; /* Soft Green */
     --rose:        #F4C2C2; /* Soft Pink */
     
+    /* Berry Collection */
+    --raspberry:   #D81B60; /* Vibrant Pink-Red */
+    --blackberry:  #4A148C; /* Deep Royal Purple */
+    --blueberry:   #5C6BC0; /* Soft Violet-Blue */
+    
     --chocolate:   #3E2723; /* Deep Brown Text */
     --dark-choco:  #281E1E; /* Darker accent */
     
@@ -115,9 +120,9 @@ h3 {
     100% { transform: translateY(0px) rotate(0deg); }
 }
 
-/* --- MARQUEE (Chocolate) --- */
+/* --- MARQUEE (Blackberry) --- */
 .marquee-container {
-    background: var(--chocolate);
+    background: var(--blackberry); /* Berry Update */
     color: var(--mango);
     padding: 15px 0;
     overflow: hidden;
@@ -244,7 +249,7 @@ h3 {
 
 /* Order and Color Assignment */
 .flavor-row:nth-child(1) .flavor-text-col { 
-    background-color: var(--pistachio); /* Soft Green for Mango context or switch? Let's use Pistachio for variety */
+    background-color: var(--pistachio); 
     order: 2; 
 }
 .flavor-row:nth-child(1) .flavor-image-col { order: 1; }
@@ -308,20 +313,20 @@ h3 {
 .premium-form button {
     padding: 20px 50px;
     border-radius: 50px;
-    background-color: var(--chocolate); /* Dark Chocolate Button */
-    color: var(--cashew);
+    background-color: var(--raspberry); /* Berry Update! */
+    color: var(--white);
     font-size: 1.2rem;
     font-weight: 700;
     border: none;
     cursor: pointer;
     text-transform: uppercase;
     transition: transform 0.2s;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(216, 27, 96, 0.3);
 }
 
 .premium-form button:hover {
     transform: scale(1.05);
-    background-color: var(--dark-choco);
+    background-color: var(--blackberry);
 }
 
 /* --- FOOTER --- */
