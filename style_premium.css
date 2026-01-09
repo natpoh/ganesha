@@ -267,6 +267,17 @@ h3 {
 }
 .flavor-row:nth-child(3) .flavor-image-col { order: 1; }
 
+.flavor-row:nth-child(4) .flavor-text-col { 
+    background-color: var(--blackberry); 
+    order: 1;
+    color: var(--cashew); /* Light text for dark background */
+}
+.flavor-row:nth-child(4) .flavor-text-col h3, 
+.flavor-row:nth-child(4) .flavor-text-col p {
+    color: var(--cashew);
+}
+.flavor-row:nth-child(4) .flavor-image-col { order: 2; }
+
 
 .flavor-title {
     font-size: 3rem;
