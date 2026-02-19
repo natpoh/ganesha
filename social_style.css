@@ -1,0 +1,42 @@
+
+/* Social Content */
+.social-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.social-content .lead {
+    font-size: 1.5rem;
+    color: var(--accent-saffron);
+    margin-bottom: 2rem;
+    font-family: var(--font-heading);
+}
+
+.social-cards {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.social-card .icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.social-card h3 {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}

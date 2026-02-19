@@ -3,154 +3,395 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ganesh's Blissful Ice Cream Factory</title>
+    <title>Samadhi eis - The Yoga of Ice Cream</title>
+    <!-- Bootstrap 5 CSS (Local) -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Ramaraja&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <canvas id="spiral-bg"></canvas>
 
-    <!-- Navigation -->
-    <header class="main-header">
-        <div class="logo">
-            <img src="assets/logo.png" alt="Ganesh's Bliss" style="height: 60px; vertical-align: middle;">
-            <span style="margin-left: 10px;">Ganesh's Bliss</span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#benefits">Why Vegan?</a></li>
-                <li><a href="#catalog">Flavors</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section (Original Shop Window) -->
-    <section id="hero" class="shop-window">
-        <!-- Background Layer removed for spiral visibility -->
-        <!-- <div class="layer background" style="background-image: url('assets/rainbow_bg.png');"></div> -->
-
-        <!-- Magic Particles Container -->
-        <canvas id="magic-canvas"></canvas>
-
-        <!-- Mechanical Layer: Gears (Removed) -->
-        <!-- <div class="layer mechanics"></div> -->
-
-        <!-- Production Layer removed -->
-        <!-- <div class="layer production"></div> -->
-
-        <!-- Central Character -->
-        <div class="layer character-layer">
-            <div class="halo-effect"></div>
-            <img src="assets/ganesh.png" alt="Ganesh Eating Ice Cream" class="ganesh-char">
-        </div>
-
-        <!-- Foreground Layer -->
-        <div class="layer foreground">
-            <div class="glass-reflection"></div>
-            <!-- <div class="vignette"></div> -->
-        </div>
-        
-        <div class="ui-overlay">
-            <h1>Ganesh's Blissful Ice Cream</h1>
-            <p>Immerse yourself in the colors of divine bliss</p>
-        </div>
-        
-        <div class="scroll-indicator">
-            <span>Scroll for Bliss</span>
-            <div class="arrow">↓</div>
-        </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section id="benefits" class="content-section bg-nature">
-        <h2 class="section-title">Why Vegan Ice Cream?</h2>
-        <div class="benefits-grid">
-            <div class="benefit-card">
-                <div class="icon">🌿</div>
-                <h3>Planetary Love</h3>
-                <p>Vegan ice cream leaves a lighter footprint. Producing plant-based milk uses significantly less land and water than dairy, reducing greenhouse gas emissions by up to 80%.</p>
-            </div>
-            <div class="benefit-card">
-                <div class="icon">❤️</div>
-                <h3>Heart Healthy</h3>
-                <p>Free from cholesterol and lower in saturated fats. Our plant-based treats are kind to your heart while satisfying your soul's deepest cravings.</p>
-            </div>
-            <div class="benefit-card">
-                <div class="icon">✨</div>
-                <h3>Pure Vitality</h3>
-                <p>Packed with nutrient-rich ingredients. We avoid artificial hormones and antibiotics, giving you pure, high-vibrational energy in every scoop.</p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-effect">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="assets/images/logo.jpg" alt="Samadhi Eis" class="rounded-circle me-2" width="50" height="50">
+                <span class="font-heading text-saffron">Samadhi Eis</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#philosophy">Philosophy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#story">Our Story</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#flavors">Flavors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#social">Social</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
-    </section>
+    </nav>
 
-    <!-- Catalog Section -->
-    <section id="catalog" class="content-section alt-bg bg-flavors">
-        <h2 class="section-title">Divine Flavors</h2>
-        <div class="catalog-grid">
-            <div class="flavor-card">
-                <img src="assets/ice_cream_mango.png" alt="Mango Lassi Bliss" class="flavor-image">
-                <h3>Mango Lassi Bliss</h3>
-                <p>Alphonso mango swirled with coconut yogurt and a hint of cardamom.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section position-relative d-flex align-items-center text-center text-white overflow-hidden">
+        <!-- Background Carousel -->
+        <div id="heroCarousel" class="carousel slide carousel-fade position-absolute top-0 start-0 w-100 h-100" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100" data-bs-interval="4000">
+                    <img src="assets/images/icecream/gallery-1.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Hero Slide 1">
+                    <div class="carousel-caption d-none d-md-block bg-dark opacity-25 w-100 h-100 top-0 start-0"></div> <!-- Overlay -->
+                </div>
+                <div class="carousel-item h-100 burns-zoom-out" data-bs-interval="4000">
+                    <img src="assets/images/icecream/gallery-2.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Hero Slide 2">
+                     <div class="carousel-caption d-none d-md-block bg-dark opacity-25 w-100 h-100 top-0 start-0"></div>
+                </div>
+                <div class="carousel-item h-100 burns-pan-right" data-bs-interval="4000">
+                    <img src="assets/images/icecream/gallery-3.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Hero Slide 3">
+                     <div class="carousel-caption d-none d-md-block bg-dark opacity-25 w-100 h-100 top-0 start-0"></div>
+                </div>
+                <div class="carousel-item h-100 burns-zoom-out" data-bs-interval="4000">
+                    <img src="assets/images/icecream/gallery-4.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Hero Slide 4">
+                     <div class="carousel-caption d-none d-md-block bg-dark opacity-25 w-100 h-100 top-0 start-0"></div>
+                </div>
+                 <div class="carousel-item h-100 burns-pan-left" data-bs-interval="4000">
+                    <img src="assets/images/icecream/gallery-5.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Hero Slide 5">
+                     <div class="carousel-caption d-none d-md-block bg-dark opacity-25 w-100 h-100 top-0 start-0"></div>
+                </div>
+                 <div class="carousel-item h-100" data-bs-interval="4000">
+                    <img src="assets/images/icecream/gallery-6.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Hero Slide 6">
+                     <div class="carousel-caption d-none d-md-block bg-dark opacity-25 w-100 h-100 top-0 start-0"></div>
+                </div>
             </div>
-            <div class="flavor-card">
-                <img src="assets/ice_cream_rose.png" alt="Rose & Pistachio" class="flavor-image">
-                <h3>Rose & Pistachio</h3>
-                <p>Fragrant rose water essence with crunchy roasted pistachios.</p>
-            </div>
-            <div class="flavor-card">
-                <img src="assets/ice_cream_chai.png" alt="Spiced Chai Choco" class="flavor-image">
-                <h3>Spiced Chai Choco</h3>
-                <p>Dark chocolate infused with ginger, cloves, and cinnamon.</p>
-            </div>
-             <div class="flavor-card">
-                <img src="assets/ice_cream_berry.png" alt="Sacred Berry" class="flavor-image">
-                <h3>Sacred Berry</h3>
-                <p>A meditative blend of raspberries, goji berries, and holy basil.</p>
+        </div>
+
+        <!-- Dark Overlay for Readability -->
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.4); z-index: 1;"></div>
+
+        <!-- Content -->
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 animate-fade-in">
+                    <div class="d-flex align-items-center justify-content-center flex-column flex-md-row mb-4 text-center text-md-start">
+                         <img src="assets/images/logo.jpg" alt="Samadhi Eis Logo" class="rounded-circle shadow-lg border border-3 border-white me-md-5 mb-4 mb-md-0" width="240" height="240">
+                         <div>
+                            <h1 class="display-1 font-heading mb-0 text-shadow-gold text-saffron">Samadhi Eis</h1>
+                         </div>
+                    </div>
+                    <h2 class="display-5 font-heading mb-3 text-shadow">Ganesh's Blissful Ice Cream Factory</h2>
+                    <p class="lead mb-4 text-shadow fs-3">Where spirituality meets indulgence.<br>The Yoga of Ice Cream.</p>
+                    <a href="#flavors" class="btn btn-lg btn-saffron rounded-pill px-5 shadow-lg">Taste the Bliss</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Production Section -->
-    <section id="production" class="content-section bg-production">
-        <div class="production-card">
-            <h2>Made with Love</h2>
-                At Ganesha's Bliss, every scoop is a masterpiece of purity. 
-                We harmonize <strong>Timeless Ayurvedic Secrets</strong> with <strong>State-of-the-Art Vegan Innovation</strong>. 
-                We believe that true luxury is clean, conscious, and kind. Our process honors the highest standards of quality 
-                and the deepest traditions of flavor, ensuring that every bite is not just delicious, but divine.
+    <!-- Philosophy -->
+    <section id="philosophy" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="assets/images/hero-bg.jpg" alt="Philosophy" class="img-fluid rounded-4 shadow hover-scale">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="font-heading mb-4 text-primary-purple">The Yoga of Ice Cream</h2>
+                    <p><strong>Yoga means "union".</strong> It seeks an internal and external harmony, a dynamic balance between body, mind and spirit.</p>
+                    <p>A good ice cream also requires a perfect balance between sugar, fat, proteins, ice and air. 🌸🍦</p>
+                    <p>Just as Yoga depends on subtle vibrations to elevate the mind, our ice cream is made in a positive environment, where we sing and listen to Mantra music.</p>
+                    <p class="fst-italic text-muted">Samadhi Eis is a fusion of delicious taste sensations, wholesome ingredients and positive vibrations!</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Footer / Contact -->
-    <footer id="contact" class="site-footer">
-        <div class="footer-content">
-            <div class="contact-info">
-                <h3>Contact Us</h3>
-                <p>📍 108 Lotus Path, Bliss City</p>
-                <p>📞 +1 (800) OM-SHANTI</p>
-                <p>📧 namaste@ganeshicecream.com</p>
+    <!-- Story -->
+    <section id="story" class="py-5">
+        <div class="container">
+             <div class="text-center mb-5">
+                <h2 class="font-heading text-saffron">Our Story</h2>
+                <div class="divider mx-auto bg-saffron"></div>
             </div>
-            <div class="contact-form-wrapper">
-                <h3>Send us a Message</h3>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="4" required></textarea>
-                    <button type="submit">Send Awareness</button>
-                </form>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2026 Ganesh's Blissful Ice Cream Factory. Baba Nam Kevalam.</p>
-            <p style="font-size: 0.8rem; margin-top: 10px;">
-                <a href="brandbook.html" target="_blank" style="color: inherit; text-decoration: underline;">Brandbook (EN)</a> | 
-                <a href="brandbook_ua.html" target="_blank" style="color: inherit; text-decoration: underline;">Брендбук (UA)</a>
-            </p>
-        </div>
-    </footer>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Timeline (simplified for Bootstrap) -->
+                    <div class="timeline-simple">
+                        <!-- Narrative Content -->
+                        <div class="row mb-5">
+                            <div class="col-lg-8 mx-auto text-center mb-5">
+                                <p class="lead">"Yoga means union. It seeks an internal and external harmony... A good ice cream also requires a perfect balance."</p>
+                            </div>
+                            
+                            <div class="col-md-12">
+                                <div class="timeline-simple">
+                                    <ul class="list-group list-group-flush border-0">
+                                        <!-- 1986 -->
+                                        <li class="list-group-item border-0 bg-transparent py-4 d-flex">
+                                            <div class="me-4 text-end" style="min-width: 80px;">
+                                                <span class="badge bg-primary-purple rounded-pill">1986</span>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-2 font-heading">The Seed is Planted</h5>
+                                                <p class="text-muted mb-0">After learning meditation and becoming vegetarian, I had my first food industry experience with a hot dog cart in Johannesburg. It was a humbling start that taught me the real world doesn't always follow our dreams.</p>
+                                            </div>
+                                        </li>
 
-    <script src="script.js"></script>
+                                        <!-- Italy -->
+                                        <li class="list-group-item border-0 bg-transparent py-4 d-flex">
+                                            <div class="me-4 text-end" style="min-width: 80px;">
+                                                <span class="badge bg-saffron rounded-pill">Italy</span>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-2 font-heading">The Art of Gelato</h5>
+                                                <p class="text-muted mb-0">Living in Italy for several years, I immersed myself in the cuisine and discovered the true art of ice cream making.</p>
+                                            </div>
+                                        </li>
+
+                                        <!-- 2017 -->
+                                        <li class="list-group-item border-0 bg-transparent py-4 d-flex">
+                                            <div class="me-4 text-end" style="min-width: 80px;">
+                                                <span class="badge bg-primary-pink rounded-pill">2017</span>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-2 font-heading">Samadhi Eis is Born</h5>
+                                                <p class="text-muted mb-2">In Wendelsheim, Germany, we transformed an old bakery into our first kitchen. Our first festival was a "mud bath" disaster – broken machines, power outages, and rain. It was a rock-bottom moment, but as yogis, we learned from the obstacles.</p>
+                                                <p class="text-muted small fst-italic">"They teach us as long as we want to learn from them."</p>
+                                            </div>
+                                        </li>
+
+                                        <!-- Winter 2017 -->
+                                        <li class="list-group-item border-0 bg-transparent py-4 d-flex">
+                                            <div class="me-4 text-end" style="min-width: 80px;">
+                                                <span class="badge bg-primary-blue rounded-pill">Innovation</span>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-2 font-heading">A New Recipe</h5>
+                                                <p class="text-muted mb-0">Restless to leave the beaten track, I spent the winter experimenting. Through trial and error, I developed our signature base using <strong>Cashew nuts and Coconut milk</strong>. By Summer 2018, we had 16 unique vegan flavors.</p>
+                                            </div>
+                                        </li>
+
+                                        <!-- 2019-2022 -->
+                                        <li class="list-group-item border-0 bg-transparent py-4 d-flex">
+                                            <div class="me-4 text-end" style="min-width: 80px;">
+                                                <span class="badge bg-secondary rounded-pill">2019-22</span>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-2 font-heading">Growth & Resilience</h5>
+                                                <p class="text-muted mb-0">We moved to Hanover, then faced the challenges of Covid. After a brief stint in Berlin's Friedrichshain, we decided to return to our roots in Wendelsheim in 2022.</p>
+                                            </div>
+                                        </li>
+
+                                        <!-- Present -->
+                                        <li class="list-group-item border-0 bg-transparent py-4 d-flex">
+                                            <div class="me-4 text-end" style="min-width: 80px;">
+                                                <span class="badge bg-success rounded-pill">Today</span>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-2 font-heading">The Ingredient of Love</h5>
+                                                <p class="text-muted mb-0">Today, we are regular participants in festivals across Germany. As a yogic monk, the special attribute I bring is the "altruistic spirit." We produce ice cream not just for profit, but to communicate tolerance, respect for the environment, and a profound love for what we do.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- Gallery -->
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <img src="assets/images/story-stand.png" class="card-img-top h-100 object-fit-cover rounded" alt="Stand">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <img src="assets/images/story-production.jpg" class="card-img-top h-100 object-fit-cover rounded" alt="Production">
+                                </div>
+                            </div>
+                             <div class="col-md-4">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <img src="assets/images/story-ice-cream.jpg" class="card-img-top h-100 object-fit-cover rounded" alt="Ice Cream">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flavors -->
+    <section id="flavors" class="py-5 bg-gradient-subtle">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="font-heading text-primary-purple">Our Flavors</h2>
+                <p class="text-muted">Handcrafted with love and mantras</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Flavor Card -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-hover hover-lift">
+                        <img src="assets/images/flavor-pistachio.png" class="card-img-top object-fit-cover" height="200" alt="Pistachio">
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-heading">Pistachio</h5>
+                            <p class="card-text small text-muted">Classic Italian style.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-hover hover-lift">
+                        <img src="assets/images/flavor-mango.jpg" class="card-img-top object-fit-cover" height="200" alt="Mango">
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-heading">Mango</h5>
+                            <p class="card-text small text-muted">Fresh fruit puree.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-hover hover-lift">
+                        <img src="assets/images/flavor-lavender.png" class="card-img-top object-fit-cover" height="200" alt="Lavender & Blueberry">
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-heading">Lavender & Blueberry</h5>
+                            <p class="card-text small text-muted">Unique floral combination.</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-hover hover-lift">
+                        <img src="assets/images/flavor-ube.jpg" class="card-img-top object-fit-cover" height="200" alt="Ube">
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-heading">Ube</h5>
+                            <p class="card-text small text-muted">Vibrant purple yam.</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-hover hover-lift">
+                         <img src="assets/images/flavor-kulfi.png" class="card-img-top object-fit-cover" height="200" alt="Kulfi">
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-heading">Kulfi</h5>
+                            <p class="card-text small text-muted">Cardamom and saffron.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-hover hover-lift">
+                        <img src="assets/images/flavor-dark-chocolate.jpg" class="card-img-top object-fit-cover" height="200" alt="Dark Chocolate">
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-heading">Dark Chocolate</h5>
+                            <p class="card-text small text-muted">Rich and decadent.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                 <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-hover hover-lift">
+                         <div class="card-img-top-placeholder bg-hazelnut d-flex align-items-center justify-content-center" style="height: 200px;">
+                            <span class="display-4">🌰</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-heading">Hazelnut</h5>
+                            <p class="card-text small text-muted">Pure nut butter.</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-sm-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-hover hover-lift">
+                        <img src="assets/images/flavor-strawberry.jpg" class="card-img-top object-fit-cover" height="200" alt="Strawberry">
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-heading">Strawberry</h5>
+                            <p class="card-text small text-muted">Fresh summer berries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Engagement -->
+    <section id="social" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="font-heading text-saffron">Social Engagement</h2>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/images/social-rehab.jpg" class="card-img-top object-fit-cover" height="250" alt="Rehab">
+                        <div class="card-body">
+                            <h5 class="card-title font-heading">Rehabilitation Centre</h5>
+                             <p class="card-text small">Supporting a centre in Central Ukraine for war victims.</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/images/social-animal-welfare.jpg" class="card-img-top object-fit-cover" height="250" alt="Animals">
+                        <div class="card-body">
+                            <h5 class="card-title font-heading">Animal Welfare</h5>
+                            <p class="card-text small">Donating to animal welfare projects for every festival we attend.</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/images/social-yss.jpg" class="card-img-top object-fit-cover" height="250" alt="YSS">
+                        <div class="card-body">
+                            <h5 class="card-title font-heading">YSS</h5>
+                            <p class="card-text small">Inspired by Paramahansa Yogananda teachings.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2 class="font-heading mb-4">Contact Us</h2>
+                    <p class="mb-5">Bring the bliss to your event!</p>
+                    <form class="text-start">
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control rounded-pill">
+                        </div>
+                         <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control rounded-pill">
+                        </div>
+                         <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control rounded-4" rows="4"></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-saffron rounded-pill btn-lg">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-12 text-center mt-5">
+                    <p class="small text-muted">&copy; 2026 Samadhi Eis. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS (Local) -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
