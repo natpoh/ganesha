@@ -1,0 +1,49 @@
+# Ice Cream Flavor Image Generation Prompts
+# Based on assets/images/flavor-strawberry.jpg
+
+General Instructions:
+- Keep the composition exactly identical to the reference image (Strawberry).
+- Keep the white paper cup, the marble-like background, and the soft natural lighting.
+- Only modify the color and texture of the ice cream scoops.
+
+---
+
+### Mango
+Prompt:
+"Make the ice cream in this image a vibrant, sunny yellow-orange, specifically representing Mango flavor. Keep the composition, cup, background, and lighting completely identical to the provided image. Change the color and texture of the ice cream itself to look like a smooth, fresh mango puree sorbet."
+
+---
+
+### Lavender & Blueberry
+Prompt:
+"Make the ice cream in this image a beautiful soft pastel purple with thin swirls of deep blue, representing Lavender and Blueberry flavor. Keep the composition, cup, background, and lighting completely identical to the provided image. Change the color and texture of the ice cream itself."
+
+---
+
+### Ube (Vibrant Purple Yam)
+Prompt:
+"Make the ice cream in this image a deep, vibrant, and intense purple, specifically representing Filipino Ube (Purple Yam) flavor. Keep the composition, cup, background, and lighting completely identical to the provided image. Change the color and texture of the ice cream itself."
+
+---
+
+### Kulfi (Cardamom and Saffron)
+Prompt:
+"Make the ice cream in this image a warm, rich cream color with tiny visible specks of reddish-orange saffron and light green cardamom, representing Indian Kulfi flavor. Keep the composition, cup, background, and lighting completely identical to the provided image. Change the color and texture of the ice cream itself."
+
+---
+
+### Dark Chocolate
+Prompt:
+"Make the ice cream in this image a rich, intense dark brown, representing premium Dark Chocolate flavor. Keep the composition, cup, background, and lighting completely identical to the provided image. Change the color and texture of the ice cream itself to look velvety and decadent."
+
+---
+
+### Hazelnut
+Prompt:
+"Make the ice cream in this image a soft, earthy light brown/beige color, specifically representing roasted Hazelnut flavor. Keep the composition, cup, background, and lighting completely identical to the provided image. Change the color and texture of the ice cream itself to look creamy with a subtle nutty texture."
+
+---
+
+### Vanilla (Base/Classic)
+Prompt:
+"Make the ice cream in this image a pale, creamy off-white color, specifically representing classic Vanilla flavor. Keep the composition, cup, background, and lighting completely identical to the provided image. Change the color and texture of the ice cream itself to look like smooth, premium vanilla bean ice cream."

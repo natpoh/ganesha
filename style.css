@@ -30,11 +30,16 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 /* Utilities */
-.text-saffron { color: var(--accent-saffron); }
-.text-primary-purple { color: #6a1b9a; /* darker purple for text readability */ }
-.bg-saffron { background-color: var(--accent-saffron); }
-.bg-primary-pink { background-color: var(--primary-pink); }
-.bg-secondary-subtle { background-color: #f8f9fa; }
+.text-saffron { color: var(--accent-saffron) !important; }
+.text-primary-purple { color: #6a1b9a !important; /* darker purple for text readability */ }
+.bg-saffron { background-color: var(--accent-saffron) !important; }
+.bg-primary-pink { background-color: var(--primary-pink) !important; }
+.bg-primary-blue { background-color: var(--primary-blue) !important; }
+.bg-primary-purple { background-color: var(--primary-purple) !important; }
+.bg-primary-yellow { background-color: var(--primary-yellow) !important; }
+.bg-teal { background-color: #2A9D8F !important; }
+.text-teal { color: #2A9D8F !important; }
+.bg-secondary-subtle { background-color: #f8f9fa !important; }
 
 /* Navbar */
 .navbar.glass-effect {
