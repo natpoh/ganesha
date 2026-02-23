@@ -15,7 +15,7 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top glass-effect">
+    <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="assets/images/logo.jpg" alt="Samadhi Eis" class="rounded-circle me-2" width="50" height="50">
@@ -80,7 +80,7 @@
                     <div class="d-flex align-items-center justify-content-center flex-column flex-md-row mb-4 text-center text-md-start">
                          <img src="assets/images/logo.jpg" alt="Samadhi Eis Logo" class="rounded-circle shadow-lg border border-3 border-white me-md-5 mb-4 mb-md-0" width="240" height="240">
                          <div>
-                            <h1 class="display-1 font-heading mb-0 text-shadow-gold text-saffron">Samadhi Eis</h1>
+                            <h1 class="display-1 mb-0 text-shadow-gold text-saffron" style="font-family: var(--font-heading);">Samadhi Eis</h1>
                          </div>
                     </div>
                     <h2 class="display-5 font-heading mb-3 text-shadow">Ganesh's Blissful Ice Cream Factory</h2>
@@ -94,7 +94,7 @@
     <!-- Flavors (Moved up) -->
 
     <!-- Flavors -->
-    <section id="flavors" class="py-5 bg-gradient-subtle">
+    <section id="flavors" class="py-5 bg-white">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="font-heading text-primary-purple display-5">Our Flavors</h2>
@@ -192,17 +192,17 @@
             <!-- Part 1: Yoga and Ice Cream? -->
             <div class="text-center mb-5">
                 <h2 class="font-heading text-saffron display-5 mb-3">Yoga and ice cream?</h2>
-                <h4 class="text-teal mb-4 fw-normal" style="font-family: 'Outfit', sans-serif;">How does that come together?</h4>
+                <h4 class="text-teal mb-4 fw-normal" style="font-family: var(--font-body);">How does that come together?</h4>
                 <div class="divider mx-auto bg-saffron" style="height: 3px; width: 60px; border-radius: 3px;"></div>
             </div>
             
             <div class="row justify-content-center text-center mb-5 pb-5 border-bottom" style="border-color: rgba(42,157,143,0.1) !important;">
                 <div class="col-lg-10">
                     <p class="lead mb-4 fw-bold" style="color: #264653;">Sure! Why not? Ice cream is one of the most enjoyable inventions in history!</p>
-                    <p class="mb-4 text-muted" style="font-family: 'Outfit', sans-serif; font-size: 1.1rem; line-height: 1.8;">
+                    <p class="mb-4 text-muted" style="font-family: var(--font-body); font-size: 1.1rem; line-height: 1.8;">
                         We live in a time where conscious choices and the holistic effects of our actions have a greater impact not only on our existence as human beings and on our society but also on our planet as a whole. We are becoming more aware of what our food consists of and how it is produced. For us, as practitioners of yoga and meditation, "cruelty-free" and "sustainability" are particularly important.
                     </p>
-                    <div class="p-4 rounded-4 text-start shadow-sm mx-auto bg-white" style="border-left: 4px solid #E9C46A; font-family: 'Outfit', sans-serif;">
+                    <div class="p-4 rounded-4 text-start shadow-sm mx-auto bg-white" style="border-left: 4px solid #E9C46A; font-family: var(--font-body);">
                         <p class="mb-0 text-muted">
                             <strong class="text-saffron fw-bold">Our ice cream is handcrafted, vegan and made with love.</strong> The simple and natural recipe based on cashew nuts, coconut milk and soya milk was developed by a yoga monk. We use cane sugar and agave syrup as sweeteners. For the fruit varieties we use freshly made fruit purees where possible, and for the nut varieties we add pure nut butter to the basic mix. However, we also offer soya-free and sugar-free flavours. The sugar free flavours are sweetened with dates instead of sugar. Our ice cream contains no milk or dairy products and no ingredients of animal origin. It is also gluten-free.
                         </p>
@@ -211,11 +211,18 @@
             </div>
 
             <!-- Part 2: The Yoga of Ice Cream -->
-            <div id="philosophy" class="text-center mb-5 pt-3">
-                <p class="lead fw-bold text-primary-purple fst-italic mx-auto" style="max-width: 600px; font-family: 'Outfit', sans-serif; font-size: 1.5rem;">
-                    "Yoga means union. It seeks an internal and external harmony, a dynamic balance between body, mind and spirit."
-                </p>
-                <div class="divider mx-auto bg-primary-purple mt-4" style="height: 3px; width: 60px; border-radius: 3px;"></div>
+            <div id="philosophy" class="text-center mb-5 pt-5">
+                <div class="position-relative d-inline-block px-5 py-4 rounded-5" style="background: linear-gradient(135deg, rgba(205, 180, 219, 0.15) 0%, rgba(255, 214, 89, 0.1) 100%); border: 1px solid rgba(255, 255, 255, 0.5);">
+                    <!-- Decorative Quote Marks -->
+                    <span class="position-absolute opacity-25" style="top: -10px; left: 15px; font-size: 5rem; font-family: var(--font-slogan); color: var(--primary-purple); line-height: 1;">&ldquo;</span>
+                    
+                    <p class="lead fst-italic mx-auto mb-0" style="max-width: 750px; font-family: var(--font-slogan); font-size: 1.85rem; color: #34495e; line-height: 1.5; text-shadow: 0 1px 2px rgba(255,255,255,0.8);">
+                        Yoga means union. It seeks an internal and external harmony, a dynamic balance between body, mind and spirit.
+                    </p>
+                    
+                    <span class="position-absolute opacity-25" style="bottom: -50px; right: 15px; font-size: 7rem; font-family: var(--font-slogan); color: var(--primary-yellow); line-height: 1;">&rdquo;</span>
+                </div>
+                <div class="divider mx-auto bg-primary-purple mt-5" style="height: 3px; width: 60px; border-radius: 3px;"></div>
             </div>
             <div class="row align-items-center">
                 <div class="col-md-6 mb-4 mb-md-0">
@@ -242,13 +249,13 @@
                 <div class="col-lg-6 order-2 order-lg-1 mt-4 mt-lg-0 pe-lg-5">
                     <div class="mb-4">
                         <span class="badge bg-primary-purple text-dark rounded-pill mb-2 px-3 py-2">1986</span>
-                        <h4 class="font-heading text-dark text-uppercase" style="letter-spacing: 2px;">The Seed is Planted</h4>
-                        <p class="text-muted" style="font-family: 'Outfit', sans-serif;">After learning meditation and becoming vegetarian, I had my first food industry experience with a hot dog cart in Johannesburg. It was a humbling start that taught me the real world doesn't always follow our dreams.</p>
+                        <h4 class="text-dark text-uppercase fw-bold" style="font-family: var(--font-body); letter-spacing: 2px;">The Seed is Planted</h4>
+                        <p class="text-muted" style="font-family: var(--font-body);">After learning meditation and becoming vegetarian, I had my first food industry experience with a hot dog cart in Johannesburg. It was a humbling start that taught me the real world doesn't always follow our dreams.</p>
                     </div>
                     <div>
                         <span class="badge bg-saffron text-dark rounded-pill mb-2 px-3 py-2">Italy</span>
-                        <h4 class="font-heading text-dark text-uppercase" style="letter-spacing: 2px;">The Art of Gelato</h4>
-                        <p class="text-muted" style="font-family: 'Outfit', sans-serif;">Living in Italy for several years, I immersed myself in the cuisine and discovered the true art of ice cream making.</p>
+                        <h4 class="text-dark text-uppercase fw-bold" style="font-family: var(--font-body); letter-spacing: 2px;">The Art of Gelato</h4>
+                        <p class="text-muted" style="font-family: var(--font-body);">Living in Italy for several years, I immersed myself in the cuisine and discovered the true art of ice cream making.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2">
@@ -262,11 +269,11 @@
                     <img src="assets/images/social-yss.jpg" class="img-fluid rounded-4 shadow-lg hover-scale" alt="Yoga Projects">
                 </div>
                 <div class="col-lg-6 ps-lg-5">
-                    <div class="bg-white p-5 rounded-4 shadow-sm" style="border-left: 4px solid #E9C46A;">
+                    <div>
                         <span class="badge bg-primary-pink text-dark rounded-pill mb-2 px-3 py-2">2017</span>
-                        <h4 class="font-heading text-dark text-uppercase" style="letter-spacing: 2px;">Samadhi Eis is Born</h4>
-                        <p class="text-muted mb-3" style="font-family: 'Outfit', sans-serif;">In Wendelsheim, Germany, we transformed an old bakery into our first kitchen. Our first festival was a "mud bath" disaster – broken machines, power outages, and rain. It was a rock-bottom moment, but as yogis, we learned from the obstacles.</p>
-                        <p class="text-muted small fst-italic mb-0" style="font-family: 'Outfit', sans-serif;">"They teach us as long as we want to learn from them."</p>
+                        <h4 class="text-dark text-uppercase fw-bold" style="font-family: var(--font-body); letter-spacing: 2px;">Samadhi Eis is Born</h4>
+                        <p class="text-muted mb-3" style="font-family: var(--font-body);">In Wendelsheim, Germany, we transformed an old bakery into our first kitchen. Our first festival was a "mud bath" disaster – broken machines, power outages, and rain. It was a rock-bottom moment, but as yogis, we learned from the obstacles.</p>
+                        <p class="text-muted small fst-italic mb-0" style="font-family: var(--font-body);">"They teach us as long as we want to learn from them."</p>
                     </div>
                 </div>
             </div>
@@ -276,13 +283,13 @@
                 <div class="col-lg-6 order-2 order-lg-1 mt-4 mt-lg-0 pe-lg-5">
                     <div class="mb-5">
                         <span class="badge bg-primary-blue text-dark rounded-pill mb-2 px-3 py-2">Innovation</span>
-                        <h4 class="font-heading text-dark text-uppercase" style="letter-spacing: 2px;">A New Recipe</h4>
-                        <p class="text-muted" style="font-family: 'Outfit', sans-serif;">Restless to leave the beaten track, I spent the winter experimenting. Through trial and error, I developed our signature base using <strong>Cashew nuts and Coconut milk</strong>. By Summer 2018, we had 16 unique vegan flavors.</p>
+                        <h4 class="text-dark text-uppercase fw-bold" style="font-family: var(--font-body); letter-spacing: 2px;">A New Recipe</h4>
+                        <p class="text-muted" style="font-family: var(--font-body);">Restless to leave the beaten track, I spent the winter experimenting. Through trial and error, I developed our signature base using <strong>Cashew nuts and Coconut milk</strong>. By Summer 2018, we had 16 unique vegan flavors.</p>
                     </div>
                     <div>
                         <span class="badge bg-teal text-white rounded-pill mb-2 px-3 py-2">2019-2022</span>
-                        <h4 class="font-heading text-dark text-uppercase" style="letter-spacing: 2px;">Growth & Resilience</h4>
-                        <p class="text-muted" style="font-family: 'Outfit', sans-serif;">We moved to Hanover, then faced the challenges of Covid. After a brief stint in Berlin's Friedrichshain, we decided to return to our roots in Wendelsheim in 2022.</p>
+                        <h4 class="text-dark text-uppercase fw-bold" style="font-family: var(--font-body); letter-spacing: 2px;">Growth & Resilience</h4>
+                        <p class="text-muted" style="font-family: var(--font-body);">We moved to Hanover, then faced the challenges of Covid. After a brief stint in Berlin's Friedrichshain, we decided to return to our roots in Wendelsheim in 2022.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2">
@@ -298,8 +305,8 @@
                 <div class="col-lg-6 ps-lg-5">
                     <div>
                         <span class="badge bg-primary-yellow text-dark rounded-pill mb-2 px-3 py-2">Today</span>
-                        <h4 class="font-heading text-dark text-uppercase" style="letter-spacing: 2px;">The Ingredient of Love</h4>
-                        <p class="text-muted mb-0" style="font-family: 'Outfit', sans-serif;">Today, we are regular participants in festivals across Germany. As a yogic monk, the special attribute I bring is the "altruistic spirit." We produce ice cream not just for profit, but to communicate tolerance, respect for the environment, and a profound love for what we do.</p>
+                        <h4 class="text-dark text-uppercase fw-bold" style="font-family: var(--font-body); letter-spacing: 2px;">The Ingredient of Love</h4>
+                        <p class="text-muted mb-0" style="font-family: var(--font-body);">Today, we are regular participants in festivals across Germany. As a yogic monk, the special attribute I bring is the "altruistic spirit." We produce ice cream not just for profit, but to communicate tolerance, respect for the environment, and a profound love for what we do.</p>
                     </div>
                 </div>
             </div>
@@ -309,27 +316,27 @@
     </section>
 
     <!-- Social Engagement -->
-    <section id="social" class="py-5 view-vh-50 d-flex align-items-center" style="background: rgba(42, 157, 143, 0.05);">
+    <section id="social" class="py-5 view-vh-50 d-flex align-items-center" style="background: rgba(var(--primary-blue-rgb), 0.3);">
         <div class="container my-5">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="font-heading text-teal display-5 mb-2" style="color: #2A9D8F; font-family: 'Cinzel Decorative', serif;">SOCIAL ENGAGEMENT</h2>
-                    <h4 class="mb-5 text-uppercase" style="color: #E76F51; font-family: 'Outfit', sans-serif; letter-spacing: 3px; font-weight: 300;">more than just ice cream</h4>
+                    <h2 class="text-teal display-4 mb-2" style="font-family: var(--font-heading); letter-spacing: 1px;">Social Engagement</h2>
+                    <h4 class="mb-5 text-uppercase text-saffron" style="font-family: var(--font-body); letter-spacing: 3px; font-weight: 300;">more than just ice cream</h4>
                     
-                    <div class="bg-white p-5 rounded-4 shadow-sm mt-4 position-relative" style="border-top: 4px solid #2A9D8F;">
+                    <div class="bg-white p-5 rounded-4 shadow-sm mt-4 position-relative" style="border-top: 4px solid #DCE2AC;">
                         <!-- Quote Icon -->
-                        <div class="position-absolute top-0 start-50 translate-middle bg-white rounded-circle p-2" style="color: #2A9D8F; font-size: 2rem;">
+                        <div class="position-absolute top-0 start-50 translate-middle bg-white rounded-circle p-2 text-teal" style="font-size: 2rem;">
                             🕊️
                         </div>
 
-                        <p class="lead mb-4 fw-bold mt-2" style="font-family: 'Outfit', sans-serif; color: #264653;">
+                        <p class="lead mb-4 fw-bold mt-2 text-dark" style="font-family: var(--font-body);">
                             The profits of Samadhi Eis are dedicated to supporting social projects.
                         </p>
-                        <p class="mb-4" style="font-family: 'Outfit', sans-serif; font-size: 1.1rem; color: #445;">
+                        <p class="mb-4" style="font-family: var(--font-body); font-size: 1.1rem; color: #445;">
                             Since 2022 we are supporting a Rehabilitation Centre in Central Ukraine which is helping people who suffer from the effects of the war.
                         </p>
                         <hr class="w-25 mx-auto my-4 text-muted opacity-25">
-                        <p class="mb-0 text-muted fst-italic" style="font-family: 'Outfit', sans-serif;">
+                        <p class="mb-0 text-muted fst-italic" style="font-family: var(--font-body);">
                             Samadhi Eis also supports initiatives to assist animals in distress and environmentally friendly projects.
                         </p>
                     </div>
@@ -358,15 +365,15 @@
                             <!-- Text column -->
                             <div class="col-md-9 col-lg-10 p-4 p-md-5">
                                 <h3 class="font-heading mb-3 text-secondary" style="font-size: 1.8rem;">Dada Devavratananda</h3>
-                                <p class="text-secondary fw-bold text-uppercase mb-4" style="font-family: 'Outfit', sans-serif; letter-spacing: 1px; font-size: 0.9rem;">
+                                <p class="text-secondary fw-bold text-uppercase mb-4" style="font-family: var(--font-body); letter-spacing: 1px; font-size: 0.9rem;">
                                     Acharya, Monk, and Teacher of Yoga and Meditation
                                 </p>
-                                <p class="text-muted mb-4" style="font-family: 'Outfit', sans-serif; line-height: 1.8;">
+                                <p class="text-muted mb-4" style="font-family: var(--font-body); line-height: 1.8;">
                                     In the tradition of Ananda Marga Yoga with over 35 years of experience. Originally from Africa, after becoming a monk, Dada Devavratananda dedicated his entire life to traveling and living all over the world with the purpose of teaching meditation, yoga, and spreading Neohumanism. He currently teaches meditation and engages in charitable projects in Germany and Ukraine.
                                 </p>
                                 
                                 <div class="mt-4 pt-4 border-top">
-                                    <p class="mb-0 fst-italic text-secondary" style="font-family: 'Outfit', sans-serif; line-height: 1.6;">
+                                    <p class="mb-0 fst-italic text-secondary" style="font-family: var(--font-body); line-height: 1.6;">
                                         "Dada is the embodiment of yoga in practice: when it is no longer you practicing yoga, but yoga becoming your entire life, the path to perfection permeates your entire character and spirit. And this is yoga in its deepest sense—self-realization and service to all creation!"
                                     </p>
                                 </div>

@@ -1,22 +1,36 @@
 /* Global Overrides */
 :root {
-    /* Color Palette - Vibrant & Spiritual */
-    --primary-pink: #FFB7B2;
-    --primary-blue: #A2E1DB;
-    --primary-yellow: #FFF5BA;
-    --primary-purple: #E2C6FF;
+    /* Color Palette - Pastel Tetradic */
+    --primary-pink: #E5A3AE; /* Strawberry Rose */
+    --primary-blue: #DCE2AC; /* Pistachio Dream (formerly blue) */
+    --primary-yellow: #FFD659; /* Sunny Mango */
+    --primary-purple: #CDB4DB; /* Lavender Bliss */
     
-    --accent-gold: #FFD700;
-    --accent-saffron: #FF9933;
+    --accent-gold: #FFD659; /* Sunny Mango */
+    --accent-saffron: #FF9933; /* Logo Orange */
     
     --text-dark: #2C3E50;
     --text-light: #F8F9FA;
-    --bg-light: #FAFAFA;
-    --bg-glass: rgba(255, 255, 255, 0.9);
+    --bg-light: #FAF0E6; /* Coconut Cream */
+    --bg-glass: rgba(250, 240, 230, 0.9);
+    
+    /* Additional Color Variants */
+    --text-purple-dark: #8C759A;
+    --text-teal-dark: #828B46;
+    --accent-saffron-hover: #e68a00;
+    --accent-saffron-rgb: 255, 153, 51;
+    --primary-blue-rgb: 220, 226, 172;
+    
+    /* Flavor Placeholders Colors */
+    --color-pistachio: #93C572;
+    --color-lavender: #E6E6FA;
+    --color-kulfi: #FFFDD0;
+    --color-hazelnut: #ae8f6f;
     
     /* Typography */
     --font-heading: 'Cinzel Decorative', serif;
     --font-body: 'Outfit', sans-serif;
+    --font-slogan: 'Ramaraja', serif;
 }
 
 body {
@@ -31,15 +45,15 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 /* Utilities */
 .text-saffron { color: var(--accent-saffron) !important; }
-.text-primary-purple { color: #6a1b9a !important; /* darker purple for text readability */ }
+.text-primary-purple { color: var(--text-purple-dark) !important; /* darker Lavender for text readability */ }
 .bg-saffron { background-color: var(--accent-saffron) !important; }
 .bg-primary-pink { background-color: var(--primary-pink) !important; }
 .bg-primary-blue { background-color: var(--primary-blue) !important; }
 .bg-primary-purple { background-color: var(--primary-purple) !important; }
 .bg-primary-yellow { background-color: var(--primary-yellow) !important; }
-.bg-teal { background-color: #2A9D8F !important; }
-.text-teal { color: #2A9D8F !important; }
-.bg-secondary-subtle { background-color: #f8f9fa !important; }
+.bg-teal { background-color: var(--primary-blue) !important; } /* Rebranded Teal to Pistachio Dream */
+.text-teal { color: var(--text-teal-dark) !important; } /* Darker Pistachio for text readability */
+.bg-secondary-subtle { background-color: var(--bg-light) !important; } /* Coconut Cream */
 
 /* Navbar */
 .navbar.glass-effect {
@@ -82,7 +96,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .btn-saffron:hover {
-    background-color: #e68a00;
+    background-color: var(--accent-saffron-hover);
     color: white;
     transform: translateY(-2px);
 }
@@ -101,17 +115,17 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 /* Flavor Placeholders */
-.bg-pistachio { background-color: #93C572; }
-.bg-lavender { background-color: #E6E6FA; }
-.bg-kulfi { background-color: #FFFDD0; }
-.bg-hazelnut { background-color: #ae8f6f; }
+.bg-pistachio { background-color: var(--color-pistachio); }
+.bg-lavender { background-color: var(--color-lavender); }
+.bg-kulfi { background-color: var(--color-kulfi); }
+.bg-hazelnut { background-color: var(--color-hazelnut); }
 
 /* Timeline Simple */
 .timeline-simple .list-group-item {
     transition: background-color 0.3s ease;
 }
 .timeline-simple .list-group-item:hover {
-    background-color: rgba(255, 153, 51, 0.05) !important;
+    background-color: rgba(var(--accent-saffron-rgb), 0.05) !important;
 }
 
 /* Animations */

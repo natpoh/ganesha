@@ -15,10 +15,10 @@
         body {
             background-color: #F9F7F2; /* Coconut Milk base */
             color: #333;
-            font-family: 'Outfit', sans-serif;
+            font-family: var(--font-body);
         }
         h1, h2, h3, h4, h5, h6 {
-            font-family: 'Ramaraja', serif;
+            font-family: var(--font-slogan);
         }
         .brand-hero {
             background: linear-gradient(135deg, #264653 0%, #2A9D8F 100%);
@@ -58,7 +58,7 @@
             transform: translateY(-5px);
         }
         .swatch-title {
-            font-family: 'Outfit', sans-serif;
+            font-family: var(--font-body);
             font-weight: 700;
             font-size: 1.1rem;
             margin-bottom: 5px;
@@ -122,7 +122,7 @@
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <img src="assets/images/logo.jpg" alt="Samadhi Eis" class="rounded-circle me-3" width="50" height="50">
-                <span class="fs-4 text-saffron" style="font-family: 'Ramaraja', serif;">Samadhi Eis Brandbook</span>
+                <span class="fs-4 text-saffron" style="font-family: var(--font-slogan);">Samadhi Eis Brandbook</span>
             </a>
             <div class="ms-auto">
                 <a href="index.html" class="btn btn-outline-dark rounded-pill btn-sm">Back to Home</a>
@@ -147,15 +147,15 @@
             
             <div class="row g-4 align-items-center mb-5">
                 <div class="col-md-6">
-                    <div class="p-4 rounded-4" style="background: rgba(42, 157, 143, 0.1); border-left: 4px solid #2A9D8F;">
+                    <div class="p-4 rounded-4" style="background: rgba(220, 226, 172, 0.3); border-left: 4px solid #DCE2AC;">
                         <h4 class="text-teal mb-3">Mission</h4>
                         <p class="fs-5 fst-italic mb-0 text-navy">"To nourish body and soul with divine plant-based treats that honor the planet and uplift the spirit."</p>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="p-4 rounded-4 text-center" style="background: rgba(231, 111, 81, 0.1); border: 2px dashed #E76F51;">
+                    <div class="p-4 rounded-4 text-center" style="background: rgba(255, 153, 51, 0.1); border: 2px dashed #FF9933;">
                         <h4 class="text-saffron mb-3">Brand Slogan</h4>
-                        <p class="display-6 mb-0 text-saffron" style="font-family: 'Ramaraja', serif;">"Immerse yourself in the colors of divine bliss."</p>
+                        <p class="display-6 mb-0 text-saffron" style="font-family: var(--font-slogan);">"Immerse yourself in the colors of divine bliss."</p>
                     </div>
                 </div>
             </div>
@@ -239,42 +239,42 @@
             <p class="lead mb-5">Our "Chakra Feast" palette balances energy with serenity. We ignore standard digital neon in favor of rich, spice-market hues that feel organic yet luxurious.</p>
             
             <div class="color-palette mb-5">
-                <div class="color-swatch text-white" style="background-color: #E76F51;">
-                    <div class="swatch-title">Saffron Spice</div>
-                    <div class="swatch-hex">#E76F51</div>
-                    <div class="swatch-desc">Primary. Stimulates appetite & creative energy.</div>
+                <div class="color-swatch text-white" style="background-color: #FF9933;">
+                    <div class="swatch-title">Logo Orange</div>
+                    <div class="swatch-hex">#FF9933</div>
+                    <div class="swatch-desc">Primary. Energetic, joyful, represents the origin of Ganesha.</div>
                 </div>
-                <div class="color-swatch text-white" style="background-color: #264653;">
-                    <div class="swatch-title">Midnight Mantra</div>
-                    <div class="swatch-hex">#264653</div>
-                    <div class="swatch-desc">Base. Deep wisdom and grounding perfection.</div>
+                <div class="color-swatch text-dark" style="background-color: #E5A3AE;">
+                    <div class="swatch-title">Strawberry Rose</div>
+                    <div class="swatch-hex">#E5A3AE</div>
+                    <div class="swatch-desc">Accent Warm. Gentle, natural sweet berry tone.</div>
                 </div>
-                <div class="color-swatch text-white" style="background-color: #2A9D8F;">
-                    <div class="swatch-title">Vedic Teal</div>
-                    <div class="swatch-hex">#2A9D8F</div>
-                    <div class="swatch-desc">Secondary. Balances heat. Represents nature.</div>
+                <div class="color-swatch text-dark" style="background-color: #FFD659;">
+                    <div class="swatch-title">Sunny Mango</div>
+                    <div class="swatch-hex">#FFD659</div>
+                    <div class="swatch-desc">Accent Warm. Bright, tropical, brings a smile and happiness.</div>
                 </div>
-                <div class="color-swatch text-dark" style="background-color: #E9C46A;">
-                    <div class="swatch-title">Turmeric Gold</div>
-                    <div class="swatch-hex">#E9C46A</div>
-                    <div class="swatch-desc">Accent. Touch of divinity & premium quality.</div>
+                <div class="color-swatch text-dark" style="background-color: #CDB4DB;">
+                    <div class="swatch-title">Lavender Bliss</div>
+                    <div class="swatch-hex">#CDB4DB</div>
+                    <div class="swatch-desc">Accent Cool. Spiritual, calming, adds a touch of magic.</div>
                 </div>
-                <div class="color-swatch text-dark" style="background-color: #F4A261;">
-                    <div class="swatch-title">Papaya Sunset</div>
-                    <div class="swatch-hex">#F4A261</div>
-                    <div class="swatch-desc">Bridge. Represents playfulness & fruitfulness.</div>
+                <div class="color-swatch text-dark" style="background-color: #DCE2AC;">
+                    <div class="swatch-title">Pistachio Dream</div>
+                    <div class="swatch-hex">#DCE2AC</div>
+                    <div class="swatch-desc">Accent Cool. Natural, earthy, brings gentle balance and organic freshness.</div>
                 </div>
-                <div class="color-swatch text-dark" style="background-color: #F9F7F2; border: 1px solid #e0dfdb;">
-                    <div class="swatch-title">Coconut Milk</div>
-                    <div class="swatch-hex">#F9F7F2</div>
-                    <div class="swatch-desc">Background. Warm, pure, edible off-white.</div>
+                <div class="color-swatch text-dark" style="background-color: #FAF0E6; border: 1px solid #e0dfdb;">
+                    <div class="swatch-title">Coconut Cream</div>
+                    <div class="swatch-hex">#FAF0E6</div>
+                    <div class="swatch-desc">Background Base. Sweet, pure, provides breathing room.</div>
                 </div>
             </div>
 
-            <div class="p-4 rounded-4" style="background: #fff; border: 1px dashed #2A9D8F;">
-                <h5 class="text-teal mb-3"><i class="bi bi-yin-yang me-2"></i>Psychological Harmony (Double-Split Complementary)</h5>
-                <p class="mb-2"><strong>Warm Tones (Saffron, Gold, Papaya):</strong> Trigger hunger, warmth, and joy (Hedonism).</p>
-                <p class="mb-0"><strong>Cool Tones (Teal, Midnight):</strong> Provoke trust, calm, and signify "natural/organic" (Consciousness).</p>
+            <div class="p-4 rounded-4" style="background: #fff; border: 1px dashed #FF9933;">
+                <h5 class="text-saffron mb-3"><i class="bi bi-yin-yang me-2"></i>Psychological Harmony (Pastel Tetradic)</h5>
+                <p class="mb-2"><strong>Warm Tones (Orange #FF9933, Yellow #FFD659, Pink #E5A3AE):</strong> Create an inviting, appetizing, analogous flow (The Hedonistic Ice Cream experience).</p>
+                <p class="mb-0"><strong>Cool/Neutral Tones (Purple #CDB4DB, Green #DCE2AC):</strong> Act as perfect color-wheel opposites to the warm tones, adding natural grounding and spiritual calm (The Yogic Conscious experience).</p>
             </div>
         </section>
 
@@ -291,20 +291,20 @@
                 <div class="col-lg-6">
                     <h4 class="text-saffron border-bottom pb-2 mb-4">Headings</h4>
                     <p class="text-muted small text-uppercase fw-bold mb-2">Primary Font</p>
-                    <p class="display-5 mb-4" style="font-family: 'Ramaraja', serif; color: #264653;">Ramaraja</p>
+                    <p class="display-5 mb-4" style="font-family: var(--font-slogan); color: #264653;">Ramaraja</p>
                     <p class="mb-4">Used for H1, H2, and logos. Provides the distinct feel of Indian calligraphy but with stronger, more uniform strokes.</p>
                     
                     <div class="p-4 bg-light rounded-4">
-                        <h1 class="mb-2" style="font-family: 'Ramaraja', serif; color: #E76F51;">Ganesha's Bliss</h1>
-                        <h2 class="mb-2" style="font-family: 'Ramaraja', serif; color: #2A9D8F;">Divine Flavors</h2>
-                        <h3 class="mb-0" style="font-family: 'Ramaraja', serif; color: #264653;">The Sweetest Mantra</h3>
+                        <h1 class="mb-2" style="font-family: var(--font-slogan); color: #E76F51;">Ganesha's Bliss</h1>
+                        <h2 class="mb-2" style="font-family: var(--font-slogan); color: #2A9D8F;">Divine Flavors</h2>
+                        <h3 class="mb-0" style="font-family: var(--font-slogan); color: #264653;">The Sweetest Mantra</h3>
                     </div>
                 </div>
 
                 <div class="col-lg-6">
                     <h4 class="text-teal border-bottom pb-2 mb-4">Body Text</h4>
                     <p class="text-muted small text-uppercase fw-bold mb-2">Secondary Font</p>
-                    <p class="display-5 mb-4" style="font-family: 'Outfit', sans-serif; font-weight: 600; color: #2A9D8F;">Outfit</p>
+                    <p class="display-5 mb-4" style="font-family: var(--font-body); font-weight: 600; color: #2A9D8F;">Outfit</p>
                     <p class="mb-4">Geometric sans-serif, modern, clean, and highly legible. Perfect for ingredient lists and storytelling.</p>
                     
                     <div class="p-4 bg-light rounded-4 font-family-base">
