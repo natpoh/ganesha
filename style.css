@@ -244,16 +244,22 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .nav-links {
-        display: none; /* Implement mobile menu later */
+    h1, .display-1 { font-size: 2.2rem !important; }
+    h2, .display-2 { font-size: 1.8rem !important; }
+    h3, .display-3 { font-size: 1.5rem !important; }
+    h4, .display-4 { font-size: 1.2rem !important; }
+    
+    .hero-section {
+        padding-top: 100px !important;
+        margin-top: 0 !important;
+        height: auto !important;
+        min-height: 100vh !important;
     }
-    .hamburger {
-        display: block;
-    }
-    .hero-content h1 {
-        font-size: 2.5rem;
+    .hero-section img {
+        width: 180px !important;
+        height: 180px !important;
     }
     .section {
-        padding: 2rem 1rem;
+        padding: 3rem 1rem !important;
     }
 }
