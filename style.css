@@ -28,7 +28,8 @@
     --color-hazelnut: #ae8f6f;
     
     /* Typography */
-    --font-heading: 'Cinzel Decorative', serif;
+    --font-heading: 'Handlee', cursive;
+    --font-heading-accent: 'Cinzel Decorative', serif;
     --font-body: 'Outfit', sans-serif;
     --font-slogan: 'Ramaraja', serif;
 }
@@ -41,6 +42,11 @@ body {
 
 h1, h2, h3, h4, h5, h6, .font-heading {
     font-family: var(--font-heading);
+    letter-spacing: 1px;
+}
+
+.font-accent {
+    font-family: var(--font-heading-accent);
 }
 
 /* Utilities */
@@ -72,12 +78,6 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     color: var(--accent-saffron) !important;
 }
 
-/* Hero Section */
-.hero-section {
-    height: 100vh;
-    min-height: 600px;
-    margin-top: -76px; /* Offset fixed navbar height */
-}
 
 .text-shadow-gold {
     text-shadow: 2px 2px 0px var(--accent-gold), 4px 4px 10px rgba(0,0,0,0.5);
@@ -145,6 +145,26 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     border-radius: 2px;
     margin-top: 1rem;
 }
+
+/* Feature Grid for Yoga & Ice Cream */
+.feature-icon-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.feature-icon-box:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
 /* Sections */
 .section {
     padding: 3rem 1rem;
@@ -157,10 +177,22 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 /* Hero Section */
 .hero-section {
-    min-height: 100vh; /* Full screen height */
+    height: 100vh;
+    min-height: 600px;
     position: relative;
-    padding-top: 0; /* Removing navbar offset padding as we use top-0 absolute positioning */
-   
+    overflow: hidden;
+}
+
+.hero-section #heroCarousel,
+.hero-section .carousel-inner,
+.hero-section .carousel-item,
+.hero-section .carousel-item img {
+    height: 100%;
+    width: 100%;
+}
+
+.hero-section .carousel-item img {
+    object-fit: cover;
 }
 
 /* Ken Burns Effects */
@@ -250,14 +282,20 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     h4, .display-4 { font-size: 1.2rem !important; }
     
     .hero-section {
-        padding-top: 100px !important;
+        height: 100dvh !important; /* Dynamic VH for mobile bars */
+        min-height: 500px !important;
+        padding-top: 80px !important;
         margin-top: 0 !important;
-        height: auto !important;
-        min-height: 100vh !important;
     }
-    .hero-section img {
+    
+    .hero-section .hero-logo {
         width: 180px !important;
         height: 180px !important;
+    }
+
+    .hero-section .carousel-item,
+    .hero-section .carousel-item img {
+        height: 100dvh !important;
     }
     .section {
         padding: 3rem 1rem !important;

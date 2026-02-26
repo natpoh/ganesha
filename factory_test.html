@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samadhi Eis Factory Scene - Bright Sketch Design</title>
+    <style>
+        :root {
+            /* Official Brandbook Palette */
+            --bg-coconut: #FAF0E6;
+            --primary-pink: #E5A3AE;
+            --primary-blue: #DCE2AC; /* Pistachio */
+            --primary-yellow: #FFD659;
+            --primary-purple: #CDB4DB;
+            --accent-saffron: #FF9933;
+            --text-dark: #2C3E50;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-coconut);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .svg-container {
+            position: relative;
+            width: 100vw;
+            height: 56.25vw; /* 16:9 Aspect Ratio */
+            max-height: 100vh;
+            max-width: 177.78vh;
+            box-shadow: 0 0 50px rgba(255, 214, 89, 0.2); /* Soft sunny glow */
+            background-color: var(--bg-coconut);
+            overflow: hidden;
+        }
+
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        @keyframes conveyRibbon {
+            from { stroke-dashoffset: 0; }
+            to { stroke-dashoffset: -100; }
+        }
+
+        @keyframes moveItems {
+            0% { transform: translateX(-200px); }
+            100% { transform: translateX(2100px); }
+        }
+        
+        @keyframes pulseLight {
+            0% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+            100% { opacity: 0.6; transform: scale(1); }
+        }
+
+        .light-ray {
+            animation: pulseLight 4s infinite alternate ease-in-out;
+            transform-origin: 300px 300px;
+        }
+        
+        .light-ray:nth-child(even) {
+            animation-duration: 5s;
+            animation-direction: alternate-reverse;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="svg-container">
+        <!-- 16:9 ViewBox 1920x1080 -->
+        <svg viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+            
+            <defs>
+                <!-- Glowing Window Gradient -->
+                <radialGradient id="windowGlow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+                    <stop offset="40%" stop-color="var(--primary-yellow)" stop-opacity="0.8"/>
+                    <stop offset="80%" stop-color="var(--accent-saffron)" stop-opacity="0.3"/>
+                    <stop offset="100%" stop-color="var(--bg-coconut)" stop-opacity="0"/>
+                </radialGradient>
+
+                <!-- Soft Wall Shadows for Blocks -->
+                <filter id="blockShadow" x="-10%" y="-10%" width="120%" height="120%">
+                    <feDropShadow dx="2" dy="5" stdDeviation="3" flood-color="#CAA98B" flood-opacity="0.4"/>
+                </filter>
+                
+                <!-- Floor Gradient for depth -->
+                <linearGradient id="floorGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#e8dac8"/> <!-- Darker coconut -->
+                    <stop offset="100%" stop-color="#FAF0E6"/> <!-- Lighter close to camera -->
+                </linearGradient>
+                
+                <!-- Conveyor Top Pattern -->
+                <pattern id="belt-pattern" width="60" height="60" patternUnits="userSpaceOnUse" patternTransform="skewX(-45)">
+                    <rect width="30" height="60" fill="var(--primary-pink)" />
+                    <rect x="30" width="30" height="60" fill="#cf8e9c" /> <!-- slightly darker pink -->
+                </pattern>
+
+                <!-- Isometric Ice Cream Box Item -->
+                <g id="conveyor-box">
+                    <polygon points="0,0 60,0 40,30 -20,30" fill="var(--primary-purple)" />
+                    <polygon points="-20,30 40,30 40,70 -20,70" fill="#b196c2" /> <!-- dark purple side -->
+                    <polygon points="40,30 60,0 60,40 40,70" fill="#a488b3" />   <!-- darker purple side -->
+                </g>
+            </defs>
+
+            <!-- ================= BACK WALL ================= -->
+            <!-- Solid Wall Background -->
+            <rect width="1920" height="700" fill="var(--bg-coconut)" />
+
+            <!-- Stone Blocks (Castle style, huge, flooded with light) -->
+            <!-- We draw some random massive distinct blocks on the right side as in the sketch -->
+            <g stroke="#ffffff" stroke-width="4" filter="url(#blockShadow)">
+                <!-- Top Row -->
+                <rect x="900" y="100" width="220" height="120" rx="10" fill="#f4e5d6" />
+                <rect x="1150" y="120" width="250" height="130" rx="15" fill="#fcf6f0" />
+                <rect x="1430" y="90" width="200" height="140" rx="10" fill="#efe0d1" />
+                
+                <!-- Middle Row -->
+                <rect x="800" y="250" width="260" height="140" rx="12" fill="#fbebe0" />
+                <rect x="1090" y="280" width="240" height="150" rx="18" fill="#f4e5d6" />
+                <rect x="1360" y="250" width="280" height="160" rx="10" fill="#fcf6f0" />
+                <rect x="1670" y="230" width="210" height="140" rx="15" fill="#efe0d1" />
+
+                <!-- Bottom Row -->
+                <rect x="920" y="420" width="230" height="140" rx="10" fill="#fcf6f0" />
+                <rect x="1180" y="450" width="280" height="130" rx="12" fill="#fbebe0" />
+                <rect x="1490" y="430" width="250" height="140" rx="10" fill="#f4e5d6" />
+            </g>
+            
+            <!-- A few subtle blocks on the left around the window -->
+            <g stroke="#ffffff" stroke-width="3" filter="url(#blockShadow)">
+                <rect x="100" y="150" width="150" height="180" rx="10" fill="#fcf6f0" />
+                <rect x="50" y="380" width="200" height="120" rx="15" fill="#f4e5d6" />
+                <rect x="500" y="100" width="180" height="140" rx="10" fill="#fbebe0" />
+                <rect x="550" y="450" width="220" height="130" rx="12" fill="#fcf6f0" />
+            </g>
+
+            <!-- ================= WINDOW & LIGHT ================= -->
+            <!-- Radiating Light Rays filling the room -->
+            <g>
+                <polygon points="300,300 -200,-100 800,-100" fill="var(--primary-yellow)" opacity="0.1" class="light-ray"/>
+                <polygon points="300,300 800,-100 1200,800" fill="var(--primary-yellow)" opacity="0.2" class="light-ray"/>
+                <polygon points="300,300 1200,800 1920,500" fill="var(--primary-yellow)" opacity="0.1" class="light-ray"/>
+                <polygon points="300,300 1920,500 1920,1080" fill="var(--primary-yellow)" opacity="0.15" class="light-ray"/>
+                <polygon points="300,300 -200,1080 1000,1080" fill="var(--primary-yellow)" opacity="0.1" class="light-ray"/>
+                <polygon points="300,300 -200,-100 -200,1080" fill="var(--primary-yellow)" opacity="0.2" class="light-ray"/>
+            </g>
+
+            <!-- Bright Glowing Aura behind Window -->
+            <circle cx="300" cy="300" r="400" fill="url(#windowGlow)" style="mix-blend-mode: overlay;" />
+            <circle cx="300" cy="300" r="250" fill="url(#windowGlow)" />
+
+            <!-- Arched Window Frame (Deep Silhouette against the light) -->
+            <g transform="translate(300, 300)">
+                <!-- Outer Arch Frame -->
+                <path d="M -120 150 L -120 -50 A 120 120 0 0 1 120 -50 L 120 150 Z" fill="none" stroke="var(--primary-blue)" stroke-width="30" />
+                <path d="M -145 150 L -145 -50 A 145 145 0 0 1 145 -50 L 145 150 Z" fill="none" stroke="#fff" stroke-width="10" opacity="0.8"/>
+                
+                <!-- Inner Window Sill (Perspective drawing) -->
+                <polygon points="-105,150 105,150 140,200 -140,200" fill="var(--primary-pink)" />
+                <polygon points="-105,150 -140,200 -140,-50 -105,-50" fill="#e0dfd5" opacity="0.5"/>
+                <polygon points="105,150 140,200 140,-50 105,-50" fill="#e0dfd5" opacity="0.5"/>
+                
+                <!-- Extremely Bright Inner Window Pane -->
+                <path d="M -105 150 L -105 -50 A 105 105 0 0 1 105 -50 L 105 150 Z" fill="#ffffff" filter="drop-shadow(0 0 30px var(--primary-yellow))"/>
+            </g>
+
+
+            <!-- ================= FOREGROUND FLOOR ================= -->
+            <rect x="0" y="700" width="1920" height="380" fill="url(#floorGrad)" />
+            
+            <!-- Floor Perspective Lines receding towards the center background -->
+            <g stroke="rgba(255,255,255,0.7)" stroke-width="4">
+                <line x1="-500" y1="1080" x2="300" y2="700" />
+                <line x1="200" y1="1080" x2="600" y2="700" />
+                <line x1="960" y1="1080" x2="960" y2="700" />
+                <line x1="1720" y1="1080" x2="1320" y2="700" />
+                <line x1="2420" y1="1080" x2="1620" y2="700" />
+            </g>
+
+
+            <!-- ================= MIDGROUND CONVEYOR BELT ================= -->
+            <!-- Massive Arched Pillar Structure supporting the conveyor -->
+            <g transform="translate(0, 500)">
+                <!-- Back side of the arched structure to give depth -->
+                <path d="M -100 30 
+                         L -100 250 L 50 250 Q 50 100 150 100 Q 250 100 250 250 L 450 250 
+                         Q 450 100 550 100 Q 650 100 650 250 L 850 250 
+                         Q 850 100 950 100 Q 1050 100 1050 250 L 1250 250 
+                         Q 1250 100 1350 100 Q 1450 100 1450 250 L 1650 250 
+                         Q 1650 100 1750 100 Q 1850 100 1850 250 L 2020 250 
+                         L 2020 30 Z" fill="#b4bc8f" /> <!-- Darker Pistachio -->
+                         
+                <!-- Front side of the arched structure -->
+                <path d="M -100 50 
+                         L -100 350 L 80 350 C 70 200 130 150 200 150 C 270 150 330 200 320 350 L 480 350 
+                         C 470 200 530 150 600 150 C 670 150 730 200 720 350 L 880 350 
+                         C 870 200 930 150 1000 150 C 1070 150 1130 200 1120 350 L 1280 350 
+                         C 1270 200 1330 150 1400 150 C 1470 150 1530 200 1520 350 L 1680 350 
+                         C 1670 200 1730 150 1800 150 C 1870 150 1930 200 1920 350 L 2020 350 
+                         L 2020 50 Z" fill="var(--primary-blue)" filter="drop-shadow(0 20px 20px rgba(0,0,0,0.15))"/>
+                
+                <!-- Highlights on the pillars -->
+                <path d="M -100 50 L 2020 50" stroke="#fff" stroke-width="10" opacity="0.6" />
+                
+                <!-- Pillar Bases (Ellipse disks at the bottom) -->
+                <ellipse cx="0" cy="350" rx="90" ry="25" fill="#c4cc9e" />
+                <ellipse cx="400" cy="350" rx="90" ry="25" fill="#c4cc9e" />
+                <ellipse cx="800" cy="350" rx="90" ry="25" fill="#c4cc9e" />
+                <ellipse cx="1200" cy="350" rx="90" ry="25" fill="#c4cc9e" />
+                <ellipse cx="1600" cy="350" rx="90" ry="25" fill="#c4cc9e" />
+                <ellipse cx="2000" cy="350" rx="90" ry="25" fill="#c4cc9e" />
+                
+                <!-- The top flat perspective surface of the conveyor -->
+                <!-- We draw a parallelogram to simulate depth -->
+                <polygon points="-100,0 2020,0 2070,50 -50,50" fill="var(--text-dark)" />
+                
+                <!-- Animated Running Belt on top -->
+                <line x1="-150" y1="25" x2="2100" y2="25" stroke="url(#belt-pattern)" stroke-width="50" style="animation: conveyRibbon 2s linear infinite;" />
+
+                <!-- Items Moving on the Conveyor -->
+                <!-- We wrap them in a group that translates across the screen horizontally -->
+                <g style="animation: moveItems 15s linear infinite;">
+                    <use href="#conveyor-box" x="0" y="-30" />
+                    <!-- Using different boxes spaced out -->
+                    <!-- To avoid complex SVG use issues, we'll draw them explicitly to change colors or just space them -->
+                    <g transform="translate(300, -30)">
+                        <polygon points="0,0 60,0 40,30 -20,30" fill="var(--primary-yellow)" />
+                        <polygon points="-20,30 40,30 40,70 -20,70" fill="#e6c150" />
+                        <polygon points="40,30 60,0 60,40 40,70" fill="#ccab47" />
+                    </g>
+                    
+                    <g transform="translate(700, -30)">
+                        <polygon points="0,0 60,0 40,30 -20,30" fill="var(--primary-blue)" />
+                        <polygon points="-20,30 40,30 40,70 -20,70" fill="#c6cc9b" />
+                        <polygon points="40,30 60,0 60,40 40,70" fill="#afb58a" />
+                    </g>
+
+                    <use href="#conveyor-box" x="1200" y="-30" />
+                    
+                    <g transform="translate(1600, -30)">
+                        <polygon points="0,0 60,0 40,30 -20,30" fill="var(--primary-yellow)" />
+                        <polygon points="-20,30 40,30 40,70 -20,70" fill="#e6c150" />
+                        <polygon points="40,30 60,0 60,40 40,70" fill="#ccab47" />
+                    </g>
+                </g>
+                
+                <!-- A second set of items offset by animation delay to keep the belt full -->
+                <g style="animation: moveItems 15s linear infinite; animation-delay: -7.5s;">
+                    <g transform="translate(150, -30)">
+                        <polygon points="0,0 60,0 40,30 -20,30" fill="var(--primary-blue)" />
+                        <polygon points="-20,30 40,30 40,70 -20,70" fill="#c6cc9b" />
+                        <polygon points="40,30 60,0 60,40 40,70" fill="#afb58a" />
+                    </g>
+                    <use href="#conveyor-box" x="500" y="-30" />
+                    
+                    <g transform="translate(1000, -30)">
+                        <polygon points="0,0 60,0 40,30 -20,30" fill="var(--primary-yellow)" />
+                        <polygon points="-20,30 40,30 40,70 -20,70" fill="#e6c150" />
+                        <polygon points="40,30 60,0 60,40 40,70" fill="#ccab47" />
+                    </g>
+                </g>
+                
+                <!-- The thick saffron trim on the front edge of the conveyor top for branding -->
+                <line x1="-100" y1="50" x2="2020" y2="50" stroke="var(--accent-saffron)" stroke-width="15" />
+            </g>
+
+        </svg>
+    </div>
+
+</body>
+</html>
