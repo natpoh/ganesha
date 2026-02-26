@@ -138,6 +138,18 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     animation: fadeIn 0.01s ease-out forwards;
 }
 
+/* Scroll Animations */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-on-scroll.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Divider */
 .divider {
     height: 4px;

@@ -36,4 +36,24 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('factory-animation')) {
         new IceCreamFactory('factory-animation');
     }
+
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.15
+    };
+
+    const scrollObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                observer.unobserve(entry.target); // Only animate once
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-on-scroll').forEach(element => {
+        scrollObserver.observe(element);
+    });
 });
